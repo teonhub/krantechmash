@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Condens';
+    src: url('/assets/font/CondensBold.woff2') format('woff2'),
+        url('/assets/font/CondensBold.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
