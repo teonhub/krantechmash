@@ -5,7 +5,7 @@
 
     useHead({
         link: [{ rel: 'canonical', href: `${baseUrl}${route.path}` }],
-        title: 'ПК «Крантехмаш»',
+        title: 'Продукция | ПК «Крантехмаш»',
         meta:
             [
                 { name: 'description', content: '' },

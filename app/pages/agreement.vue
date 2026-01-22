@@ -5,17 +5,17 @@
 
     useHead({
         link: [{ rel: 'canonical', href: `${baseUrl}${route.path}` }],
-        title: 'ПК «Крантехмаш»',
+        title: 'Пользовательское соглашение | ПК Крантехмаш',
         meta:
             [
-                { name: 'description', content: '' },
+                { name: 'description', content: 'Политика конфиденциальности и пользовательское соглашение' },
                 { name: 'keywords', content: '' },
-                { property: 'og:title', content: '' },
-                { property: 'og:description', content: '' },
+                { property: 'og:title', content: 'Пользовательское соглашение | ПК Крантехмаш' },
+                { property: 'og:description', content: 'Политика конфиденциальности и пользовательское соглашение' },
                 { property: 'og:image', content: '' },
                 { property: 'og:url', content: 'https://ktmcranes.ru'+`${route.path}` },
                 { property: 'og:type', content: 'website' },
-                { property: 'og:site_name', content: 'ПК «Крантехмаш»' },
+                { property: 'og:site_name', content: 'ПК Крантехмаш' },
                 { property: 'og:locale', content: 'ru_RU' }
             ]
         })

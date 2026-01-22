@@ -1,2 +1,30 @@
-User-Agent: *
-Disallow: /
+User-agent: Yandex
+Clean-param: etext&ybaip&utm_source&utm_medium&utm_campaign&utm_content&utm_term&utm_device /
+Allow: /
+Disallow: /404.html
+Disallow: /502.html
+Disallow: /_payload.json
+Disallow: /*/_payload.json
+Disallow: /sender-tpl.html
+Disallow: /sender.form.php
+Disallow: /phpmailer/
+Disallow: /files/pdf/
+Disallow: /agreement.html
+Disallow: /cookie.html
+Disallow: /vacancy.html
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /502.html
+Disallow: /_payload.json
+Disallow: /*/_payload.json
+Disallow: /sender-tpl.html
+Disallow: /sender.form.php
+Disallow: /phpmailer/
+Disallow: /files/pdf/
+Disallow: /agreement.html
+Disallow: /cookie.html
+Disallow: /vacancy.html
+
+Sitemap: https://scanlife.ru/sitemap.xml

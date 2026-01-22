@@ -5,17 +5,17 @@
 
     useHead({
         link: [{ rel: 'canonical', href: `${baseUrl}${route.path}` }],
-        title: 'ПК «Крантехмаш»',
+        title: 'Вакансии | ПК Крантехмаш',
         meta:
             [
                 { name: 'description', content: '' },
                 { name: 'keywords', content: '' },
-                { property: 'og:title', content: '' },
+                { property: 'og:title', content: 'Вакансии | ПК Крантехмаш' },
                 { property: 'og:description', content: '' },
-                { property: 'og:image', content: '' },
+                { property: 'og:image', content: '/image/short/shorts-001.jpg' },
                 { property: 'og:url', content: 'https://ktmcranes.ru'+`${route.path}` },
                 { property: 'og:type', content: 'website' },
-                { property: 'og:site_name', content: 'ПК «Крантехмаш»' },
+                { property: 'og:site_name', content: 'ПК Крантехмаш' },
                 { property: 'og:locale', content: 'ru_RU' }
             ]
         })

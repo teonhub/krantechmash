@@ -22,19 +22,19 @@
             url: '/produce/konsole-electric',
             image: '/image/engineering/konsole-electric.jpg',
             name: 'Консольный электрический',
-            price: '5 т'
+            price: '10 т'
         },
         {
             url: '/produce/konsole-mech',
             image: '/image/engineering/konsole-mech.jpg',
             name: 'Консольный ручной',
-            price: '5 т'
+            price: '10 т'
         },
         {
             url: '/produce/konsole-wall',
             image: '/image/engineering/konsole-wall.jpg',
             name: 'Консольный настенный',
-            price: '250 кг'
+            price: '320 кг'
         },
         {
             url: '/produce/single-girder',
@@ -46,19 +46,19 @@
             url: '/produce/dubble-girder',
             image: '/image/engineering/dubble-girder.jpg',
             name: 'Опорный двухбалочный',
-            price: '20 т'
+            price: '50 т'
         },
         {
             url: '/produce/suspended-single-span',
             image: '/image/engineering/suspended-single-span.jpg',
             name: 'Подвесной однопролетный',
-            price: '10 т'
+            price: '16 т'
         },
         {
             url: '/produce/suspended-dubble-span',
             image: '/image/engineering/suspended-dubble-span.jpg',
             name: 'Подвесной двухпролетный',
-            price: '10 т'
+            price: '16 т'
         },
         {
             url: '/produce/gantry',
@@ -70,7 +70,7 @@
             url: '/produce/mobile-transshipment',
             image: '/image/engineering/mobile-transshipment.jpg',
             name: 'Перегрузочное устройство',
-            price: '1 т'
+            price: '5 т'
         },
         {
             url: '/produce/trolleys-support',

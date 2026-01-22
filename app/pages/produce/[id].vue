@@ -39,17 +39,17 @@
 
     useHead({
         link: [{ rel: 'canonical', href: `${baseUrl}${route.path}` }],
-        title: computed(() => product.value? `${product.value.name} | ПК «Крантехмаш»` : 'Товар не найден'),
+        title: computed(() => product.value? `${product.value.name} | ПК Крантехмаш` : 'Товар не найден'),
         meta:
             [
                 { name: 'description', content: computed(() => product.value?.seo_descrip) },
                 { name: 'keywords', content: computed(() => product.value?.seo_keyword) },
                 { property: 'og:title', content: computed(() => product.value?.name) },
                 { property: 'og:description', content: computed(() => product.value?.seo_descrip) },
-                { property: 'og:image', content: '' },
+                { property: 'og:image', content: '/image/short/shorts-001.jpg' },
                 { property: 'og:url', content: 'https://ktmcranes.ru'+`${route.path}` },
                 { property: 'og:type', content: 'website' },
-                { property: 'og:site_name', content: 'ПК «Крантехмаш»' },
+                { property: 'og:site_name', content: 'ПК Крантехмаш' },
                 { property: 'og:locale', content: 'ru_RU' }
             ]
         })
@@ -89,6 +89,12 @@
                             <p>Узнать стоимость продукции можно по телефону или почте <a href="mailto:info@ktmcranes.ru">info@ktmcranes.ru</a> Рассчитаем цену по вашим параметрам. Мы работаем с 8:00 до 18:00, Пн. – Пт.</p>
                             <p><a href="tel:+79313787378" class="button-phone">Тел. +7 931 378 73 78</a></p>
                         </div>
+                    </div>
+                </div>
+                <div v-else>
+                    <div class="not-found">
+                        <h1>Товар не найден</h1>
+                        <p><NuxtLink to="/produce">вернуться в каталог</NuxtLink></p>
                     </div>
                 </div>
             </div>
@@ -211,6 +217,30 @@
     text-transform: lowercase;
 }
 
+.not-found {
+    text-align: center;
+    padding: 90px 40px;
+}
+
+.not-found h1 {
+    padding: 0px 0 10px 0;
+    font-family: 'Condens';
+    text-transform: uppercase;
+    font-size: 92px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.not-found a {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #bbbbbb;
+    padding-bottom: 2px;
+    font-family: "PT Mono", serif;
+    font-size: 15px;
+    color: #000;
+}
+
 @media (max-width: 575.98px) {
     .engineering-layout {
         display: flex;
@@ -257,6 +287,10 @@
     }
     .engineering-page .support a.button-phone {
         font-size: 40px;
+    }
+    .not-found h1 {
+        font-size: 52px;
+        padding: 40px 0 0 0;
     }
 }
 

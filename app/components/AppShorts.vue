@@ -29,23 +29,23 @@
     <div class="shorts-items">
         <div class="grid-4">
             <AppShortsItem
-                video="/shorts/shorts-001.mp4"
+                short="/files/shorts/shorts-001.mp4"
                 cover="/image/short/shorts-001.jpg"
-                size="44.80"
+                sizef="44.80"
             />
             <AppShortsItem
-                video="/shorts/shorts-db-01.mp4"
+                short="/files/shorts/shorts-db-01.mp4"
                 cover="/image/short/shorts-db-01.jpg"
-                size="11.50"
+                sizef="11.50"
             />
             <AppShortsItem
-                video="/shorts/shorts-ob.mp4"
+                short="/files/shorts/shorts-ob.mp4"
                 cover="/image/short/shorts-ob.jpg"
-                size="21.40" />
+                sizef="21.40" />
             <AppShortsItem
-                video="/shorts/shorts-db-02.mp4"
+                short="/files/shorts/shorts-db-02.mp4"
                 cover="/image/short/shorts-db-02.jpg"
-                size="16.70"
+                sizef="16.70"
             />
         </div>
     </div>
