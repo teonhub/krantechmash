@@ -8,25 +8,25 @@
         <div class="grid-4">
             <AppProektItem 
                 url="#"
-                image="/image/proekt/proekt-demo.jpg"
+                image="/files/image/proekt/proekt-demo.jpg"
                 customer="ОП Онежский Трактор"
                 name="Консольный ручной"
             />
             <AppProektItem 
                 url="#"
-                image="/image/proekt/proekt-demo.jpg"
+                image="/files/image/proekt/proekt-demo.jpg"
                 customer="ОП Онежский Трактор"
                 name="Консольный ручной"
             />
             <AppProektItem 
                 url="#"
-                image="/image/proekt/proekt-demo.jpg"
+                image="/files/image/proekt/proekt-demo.jpg"
                 customer="ОП Онежский Трактор"
                 name="Консольный ручной"
             />
             <AppProektItem 
                 url="#"
-                image="/image/proekt/proekt-demo.jpg"
+                image="/files/image/proekt/proekt-demo.jpg"
                 customer="ОП Онежский Трактор"
                 name="Консольный ручной"
             />

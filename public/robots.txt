@@ -12,6 +12,8 @@ Disallow: /files/pdf/
 Disallow: /agreement.html
 Disallow: /cookie.html
 Disallow: /vacancy.html
+Disallow: /*?etext=
+Disallow: /*?ybaip=
 
 User-agent: *
 Allow: /
@@ -26,5 +28,7 @@ Disallow: /files/pdf/
 Disallow: /agreement.html
 Disallow: /cookie.html
 Disallow: /vacancy.html
+Disallow: /*?etext=
+Disallow: /*?ybaip=
 
-Sitemap: https://scanlife.ru/sitemap.xml
+Sitemap: https://ktmcranes.ru/sitemap.xml

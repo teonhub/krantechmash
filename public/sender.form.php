@@ -14,12 +14,14 @@
     $name = $_POST["name"];
 	$phone = $_POST["phone"];
     $email = $_POST["email"];
+    $produce = $_POST["produce"];
 	$email_template = "sender-tpl.html";
 
     $body = file_get_contents($email_template);
 	$body = str_replace('%name%', $name, $body);
 	$body = str_replace('%phone%', $phone, $body);
     $body = str_replace('%email%', $email, $body);
+    $body = str_replace('%produce%', $produce, $body);
 
     $mail->addAddress("info@ktmcranes.ru");
     $mail->addAddress("twohouse@yandex.ru");

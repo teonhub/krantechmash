@@ -30,21 +30,21 @@
         <div class="grid-4">
             <AppShortsItem
                 short="/files/shorts/shorts-001.mp4"
-                cover="/image/short/shorts-001.jpg"
+                cover="/files/image/short/shorts-001.jpg"
                 sizef="44.80"
             />
             <AppShortsItem
                 short="/files/shorts/shorts-db-01.mp4"
-                cover="/image/short/shorts-db-01.jpg"
+                cover="/files/image/short/shorts-db-01.jpg"
                 sizef="11.50"
             />
             <AppShortsItem
                 short="/files/shorts/shorts-ob.mp4"
-                cover="/image/short/shorts-ob.jpg"
+                cover="/files/image/short/shorts-ob.jpg"
                 sizef="21.40" />
             <AppShortsItem
                 short="/files/shorts/shorts-db-02.mp4"
-                cover="/image/short/shorts-db-02.jpg"
+                cover="/files/image/short/shorts-db-02.jpg"
                 sizef="16.70"
             />
         </div>

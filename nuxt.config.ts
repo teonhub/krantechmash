@@ -26,8 +26,8 @@ export default defineNuxtConfig({
                 { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=PT+Mono&display=swap' }
             ],
             script: [
-                { src: '/js/dialog-polyfill.min.js', defer: true },
-                { src: '/js/sender.form.js', defer: true }
+                { src: '/files/js/dialog-polyfill.min.js', defer: true },
+                { src: '/files/js/sender.form.js', defer: true }
             ],
         }
     }

@@ -35,10 +35,26 @@
             <form name="form" method="post" action="sender.form.php">
                 <label>Ваше имя</label>
                 <input type="text" name="name" class="modal-content" placeholder="Ваше имя" aria-label="Введите ваше имя" />
-                <label>Ваше имя</label>
+                <label>Ваш номер телефона</label>
                 <input type="text" name="phone" class="modal-content" placeholder="Ваш номер телефона" aria-label="Введите ваш номер телефон" data-reg="^((\+7|7|8)+([0-9]){10})$" />
-                <label>Ваше имя</label>
+                <label>Электронная почта</label>
                 <input type="text" name="email" class="modal-content" placeholder="Электронная почта" aria-label="Введите ваш адрес электронной почты" />
+                <label>Продукция</label>
+                <select name="produce" class="modal-content">
+                    <option value="Пользователь не указал">Укажите продукцию</option>
+                    <option value="Кран консольный электрический">Кран консольный электрический</option>
+                    <option value="Кран консольный ручной">Кран консольный ручной</option>
+                    <option value="Кран консольный настенный">Кран консольный настенный</option>
+                    <option value="Кран опорный однобалочный">Кран опорный однобалочный</option>
+                    <option value="Кран опорный двухбалочный">Кран опорный двухбалочный</option>
+                    <option value="Кран подвесной однопролетный">Кран подвесной однопролетный</option>
+                    <option value="Кран подвесной двухпролетный">Кран подвесной двухпролетный</option>
+                    <option value="Кран козловой">Кран козловой</option>
+                    <option value="Мобильное перегрузочное устройство">Мобильное перегрузочное устройство</option>
+                    <option value="Концевые балки к опорному крану">Концевые балки к опорному крану</option>
+                    <option value="Концевые балки к подвесному крану">Концевые балки к подвесному крану</option>
+                </select>
+
             <p>Нажимая кнопку "Отправить", я даю своё согласие на обработку указанных мной персональных данных в соответствии с <NuxtLink to="/agreement">пользовательским соглашением</NuxtLink></p>
             <div class="btns-layout">
                 <button class="btn-form" type="button" @click="close">Закрыть</button>
@@ -69,7 +85,7 @@
     font-size: 72px;
     font-weight: 100;
     line-height: 72px;   
-    margin: 40px 0;
+    margin: 0 0 20px 0;
 }
 
 .modal-layout label {
@@ -84,8 +100,8 @@
     display: block;
     font-size: 15px;
     font-family: "PT Mono", serif;
-    height: 58px;
-    margin: 0 0 10px 0;
+    height: 56px;
+    margin: 0 0 8px 0;
     padding: 5px 15px 0;
     width: 100%;    
 }
@@ -134,6 +150,14 @@
     color: #000;
 }
 
+.modal-layout select {
+    color: #757575;
+}
+
+.modal-layout select option {
+    font-size: 14px;
+}
+
 @media (max-width: 575.98px) {
     .modal-layout {
         width: 100%;
@@ -144,14 +168,14 @@
         margin: 5px 0;
     }
     .modal-layout .modal-content {
-        height: 52px;
-        margin: 0 0 5px 0;
+        height: 50px;
+        margin: 0 0 3px 0;
         font-size: 14px;
     }
     .modal-layout p {
         font-size: 12px;
         line-height: 18px;
-        padding: 20px 0 30px 0;
+        padding: 20px 0 20px 0;
     }
     .modal-layout button.btn-form {
         height: 48px;
