@@ -54,12 +54,11 @@
                     <option value="Концевые балки к опорному крану">Концевые балки к опорному крану</option>
                     <option value="Концевые балки к подвесному крану">Концевые балки к подвесному крану</option>
                 </select>
-
-            <p>Нажимая кнопку "Отправить", я даю своё согласие на обработку указанных мной персональных данных в соответствии с <NuxtLink to="/agreement">пользовательским соглашением</NuxtLink></p>
-            <div class="btns-layout">
-                <button class="btn-form" type="button" @click="close">Закрыть</button>
-                <button class="btn-form" type="submit" name="submit">Отправить</button>
-            </div>
+                <p>Нажимая кнопку "Отправить", я даю своё согласие на обработку указанных мной персональных данных в соответствии с <NuxtLink to="/agreement">пользовательским соглашением</NuxtLink></p>
+                <div class="btns-layout">
+                    <button class="btn-form" type="button" @click="close">Закрыть</button>
+                    <button class="btn-form" type="submit" name="submit">Отправить</button>
+                </div>
             </form>
         </div>
     </div>

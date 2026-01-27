@@ -26,7 +26,6 @@
     <main>
     <AppSalutation />
     <AppEngineering />
-    <AppProekt />
     <AppShorts />
     </main>
 </template>

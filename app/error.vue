@@ -53,6 +53,7 @@
     margin-top: 30px;
     font-family: 'Condens';
     text-transform: uppercase;
+    font-weight: 100;
     font-size: 72px;
     line-height: 72px;
 }

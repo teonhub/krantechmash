@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     build: {
         transpile: ['@fancyapps/ui'],
     },
-    modules: ['@pinia/nuxt'], 
+    modules: ['@pinia/nuxt', 'yandex-metrika-module-nuxt3'], 
     css: [
         '~/assets/css/typeface.css',
         '~/assets/css/normalize.css',
@@ -30,5 +30,14 @@ export default defineNuxtConfig({
                 { src: '/files/js/sender.form.js', defer: true }
             ],
         }
+    },
+    yandexMetrika: {
+        id: '69875563',
+        ignoreBots: true,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        defer: true
     }
 })

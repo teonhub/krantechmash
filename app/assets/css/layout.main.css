@@ -684,6 +684,7 @@ main .proekt .proekt-description .layout-btn a.btn-mode:hover{
 }
 
 main .shorts-wrap{
+    margin-top: 1px;
     margin-bottom: 1px;
     border-radius: 30px;
     border-bottom-left-radius: 0;

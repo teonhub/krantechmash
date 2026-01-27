@@ -30,6 +30,6 @@
                     <AppEngineeringItems />
                 </div>
             </div>
-        <AppProekt />
+        <AppShorts />
     </main>
 </template>
