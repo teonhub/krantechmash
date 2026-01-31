@@ -83,7 +83,7 @@
                             </tbody>
                         </table>
                         <div v-if="product.certificate" class="button-certificate">
-                            <a :href="`/files/pdf/${product.certificate}`" target="_blank">Сертификат соответсвия PDF</a>
+                            <a :href="`/files/pdf/${product.certificate}`" target="_blank">Сертификат соответствия PDF</a>
                         </div>
                         <div class="support">
                             <p>Узнать стоимость продукции можно по телефону или почте <a href="mailto:info@ktmcranes.ru">info@ktmcranes.ru</a> Рассчитаем цену по вашим параметрам. Мы работаем с 8:00 до 18:00, Пн. – Пт.</p>
