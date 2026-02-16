@@ -25,8 +25,30 @@
 <template>
     <main>
         <AppLayoutHeading title="Реализованные проекты" />
-        <div class="content-page">
-            <p class="_temp">Идёт обновление раздела.<br>Пожалуйста, посетите раздел позже.<br><br><NuxtLink to="/">Перейти на главную</NuxtLink></p>
+            <div class="proekt-wrap">
+            
+                <div class="grid-4">
+                    <AppProektItem 
+                        url="#"
+                        image="/files/proekt/orel-medvd/01.avif"
+                        name="г.Орёл, Завод им.Медведева"
+                    />
+                    <AppProektItem 
+                        url="#"
+                        image="/files/proekt/orel-medvd/01.avif"
+                        name="г.Орёл, Завод им.Медведева"
+                    />
+                    <AppProektItem 
+                        url="#"
+                        image="/files/proekt/orel-medvd/01.avif"
+                        name="г.Орёл, Завод им.Медведева"
+                    />
+                    <AppProektItem 
+                        url="#"
+                        image="/files/proekt/orel-medvd/01.avif"
+                        name="г.Орёл, Завод им.Медведева"
+                    />
+                    </div>
         </div>
     </main>
 </template>
