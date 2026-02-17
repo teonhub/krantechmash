@@ -596,9 +596,27 @@ main .proekt-wrap .proekt-heading{
     padding: 70px 40px;
 }
 
+main .proekt-wrap .proekt-heading .proekt-inner{
+    max-width: 800px;
+    padding-left: 80px;
+    font-size: 15px;
+    font-family: "PT Mono", serif;
+    line-height: 24px;
+}
+
 main .layout-figure{
     width: 50px;
     margin-right: 30px;
+}
+
+main .proekt-wrap h1{
+    text-align: center;
+    font-family: 'Condens';
+    text-transform: uppercase;
+    font-size: 92px;
+    font-weight: 100;
+    line-height: 84px;
+    color: #fff;
 }
 
 main .proekt-wrap h2{
@@ -712,6 +730,7 @@ main .proekt-wrap .proekt-footer a{
     text-align: center;
     border-radius: 5px;
     background: #f5f5f5;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
     color: #000;
     font-size: 44px;
     font-family: 'Condens';
@@ -724,6 +743,38 @@ main .proekt-wrap .proekt-footer a:hover{
     color: #fff;
     background-color: #1d55cd;
     transition: all 0.3s ease-in-out 0s;
+}
+
+main .proekt-wrap .proekt-inner{
+    margin: 80px 0 60px 0;
+    color: #fff;
+    font-size: 15px;
+    font-family: "PT Mono", serif;
+    line-height: 24px;
+    text-align: center;
+}
+
+main .proekt-wrap .proekt-local{
+    margin-bottom: 20px;
+}
+
+main .proekt-wrap .proekt-local .local-icon{
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+}
+
+main .proekt-wrap .proekt-tech{
+    margin-top: 20px;
+}
+
+main .proekt-wrap .proekt-gallery{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+main .proekt-wrap .proekt-gallery picture img{
+    border-radius: var(--main-radis);
 }
 
 main .shorts-wrap{

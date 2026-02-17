@@ -6,7 +6,7 @@
             </div>
         <div class="grid-4">
             <AppProektItem 
-                url="#"
+                url="/proekts/medvedeva"
                 image="/files/proekt/orel-medvd/01.avif"
                 name="г.Орёл, Завод им.Медведева"
             />
