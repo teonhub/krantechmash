@@ -773,8 +773,35 @@ main .proekt-wrap .proekt-gallery{
     margin-bottom: 100px;
 }
 
+main .proekt-wrap .proekt-gallery picture{
+    display: block;
+    margin-bottom: 40px;
+}
+
 main .proekt-wrap .proekt-gallery picture img{
-    border-radius: var(--main-radis);
+    border-radius: 6px;
+}
+
+main .link-back{
+    padding-top: 30px;
+    text-align: center;
+}
+
+main .link-back a{
+    font-family: "PT Mono", serif;
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #3d3d3d;
+    padding-bottom: 2px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+main .link-back a:hover{
+    border-bottom: 1px solid #fff;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 main .shorts-wrap{
@@ -1024,7 +1051,7 @@ footer .footer-wrap .footer-items ul li:first-child{
 
 footer .footer-wrap .footer-items ul li a{
     text-transform: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     color: #fff;
     text-decoration: none;
