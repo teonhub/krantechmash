@@ -1,5 +1,5 @@
 @media (max-width: 575.98px) {
-    header, main .salutation .inner-center::before, main .salutation .inner-center::after, main .salutation .inner-right .arrow-down, .main .engineering-heading, .layout-figure, .proekt-wrap {
+    header, main .salutation .inner-center::before, main .salutation .inner-center::after, main .salutation .inner-right .arrow-down, .main .engineering-heading, .layout-figure {
         display: none;
     }
 
@@ -171,8 +171,7 @@
     main .engineering{
        background-color: #000;
     }
-    main .engineering h2,
-    main .proekt-wrap h2 {
+    main .engineering h2{
         font-size: 58px;
         line-height: 56px;
         color: #000;
@@ -268,10 +267,14 @@
         border-radius: 0;
     }
     main .proekt:nth-child(3) {
+        /*
         border-bottom-left-radius: 30px;
+        */
     }
     main .proekt:nth-child(4) {
+        /*
         border-bottom-right-radius: 30px;
+        */
     }
     main .shorts-wrap {
         margin-top: 1px;
@@ -352,11 +355,75 @@
         font-size: 52px;
         line-height: 52px;
     }
-    main .content-page .cookie p{
+    main .content-page .cookie p {
         font-size: 14px;
     }
-    main .engineering .grid-4 .engin-wrap a.all-produce{
+    main .engineering .grid-4 .engin-wrap a.all-produce {
         font-size: 32px;
+    }
+    main .proekt{
+        margin-top: 0;
+    }
+    main .proekt-wrap .proekt-heading {
+        padding: 120px 60px 40px 40px;
+        background: #000;
+    }
+    main .proekt-wrap h2 {
+        color: #fff;
+        font-size: 58px;
+        line-height: 56px;
+    }
+    main .proekt .layout-btn {
+        padding: 30px;
+    }
+    main .proekt .icon-name {
+        display: none;
+    }
+    main .proekt .proek-name {
+        left: 30px;
+    }
+    main .proekt .layout-btn a.btn-mode {
+        justify-content: center;
+        padding: 0;
+        font-size: 12px;
+        height: 42px;
+        line-height: 42px;
+        clip-path: initial;
+    }
+    main .proekt .layout-btn a.btn-mode .arrow-right {
+        display: none;
+    }
+    main .proekt-wrap .proekt-footer {
+        min-height: 100px;
+        margin-top: 1px;
+    }
+    main .proekt-wrap .proekt-footer a {
+        width: calc(100% - 60px);
+        font-size: 32px;
+        padding: 10px 0;
+    }
+    main .proekt-wrap .proekt-inner {
+        margin: 110px 0 60px 0;
+    }
+    main .proekt-wrap .proekt-local {
+        font-size: 13px;
+    }
+    main .proekt-wrap .proekt-local .local-icon {
+        width: 30px;
+    }
+    main .proekt-wrap h1 {
+        font-size: 58px;
+        line-height: 56px;
+    }
+    main .proekt-wrap .proekt-gallery {
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+    main .proekt-wrap .proekt-gallery picture {
+        margin-bottom: 10px;
+    }
+    main .proekt-wrap .proekt-gallery picture img {
+        border-radius: 4px;
     }
     footer {
         padding: 100px 40px 40px 40px;

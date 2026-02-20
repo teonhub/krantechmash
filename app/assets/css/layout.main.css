@@ -631,11 +631,11 @@ main .proekt-wrap .grid-4{
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1px;
+    margin-top: 1px;
 }
 
 main .proekt{
     position: relative;
-    margin-top: 1px;
     box-sizing: border-box;
     background-color: #fff;
 }
@@ -747,6 +747,8 @@ main .proekt-wrap .proekt-footer a:hover{
 
 main .proekt-wrap .proekt-inner{
     margin: 80px 0 60px 0;
+    box-sizing: border-box;
+    padding: 0 25px;
     color: #fff;
     font-size: 15px;
     font-family: "PT Mono", serif;

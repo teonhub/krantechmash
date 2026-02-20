@@ -48,28 +48,28 @@
                 <AppProektItem 
                     url="/proekts/moscow-vodokanal"
                     image="/files/proekt/moscow-vodokanal/01.avif"
-                    name="г.Москва, АО «Мосводоканал»"
+                    name="г.Москва, «Мосводоканал»"
                 />
                 
                 <AppProektItem 
-                    url="/proekts/medvedeva"
-                    image="/files/proekt/orel-medvd/01.avif"
-                    name="г.Орёл, Завод им.Медведева"
+                    url="/proekts/tula-splav"
+                    image="/files/proekt/tula-splav/01.avif"
+                    name="г.Тула, Завод НПО «СПЛАВ»"
                 />
                 <AppProektItem 
-                    url="/proekts/kolomna-vpk"
-                    image="/files/proekt/kolomna-vpk/01.avif"
+                    url="/proekts/kulebaki-ruspolimet"
+                    image="/files/proekt/kulebaki-ruspolimet/01.avif"
+                    name="г.Кулебаки, «Русполимет»"
+                />
+                <AppProektItem 
+                    url="/proekts/baskunchak-russol"
+                    image="/files/proekt/baskunchak-russol/01.avif"
+                    name="г.н.Баскунчак, «Руссоль»"
+                />
+                <AppProektItem 
+                    url="/proekts/kolomna-vpk-5"
+                    image="/files/proekt/kolomna-vpk-5/01.avif"
                     name="г.Коломна, ВПК"
-                />
-                <AppProektItem 
-                    url="/proekts/kolomna-vpk-odnobalochniy"
-                    image="/files/proekt/kolomna-vpk-odnobalochniy/01.avif"
-                    name="г.Коломна, ВПК"
-                />
-                <AppProektItem 
-                    url="/proekts/moscow-vodokanal"
-                    image="/files/proekt/moscow-vodokanal/01.avif"
-                    name="г.Москва, АО «Мосводоканал»"
                 />
             </div>
         </div>

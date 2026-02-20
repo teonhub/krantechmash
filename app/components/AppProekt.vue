@@ -11,19 +11,19 @@
                 name="г.Орёл, Завод им.Медведева"
             />
             <AppProektItem 
-                url="/proekts/kolomna-vpk"
-                image="/files/proekt/kolomna-vpk/01.avif"
-                name="г.Коломна, ВПК"
+                url="/proekts/baskunchak-russol"
+                image="/files/proekt/baskunchak-russol/01.avif"
+                name="г.н.Баскунчак, «Руссоль»"
             />
             <AppProektItem 
-                url="/proekts/kolomna-vpk-odnobalochniy"
-                image="/files/proekt/kolomna-vpk-odnobalochniy/01.avif"
-                name="г.Коломна, ВПК"
+                url="/proekts/kulebaki-ruspolimet"
+                image="/files/proekt/kulebaki-ruspolimet/01.avif"
+                name="г.Кулебаки, «Русполимет»"
             />
             <AppProektItem 
                 url="/proekts/moscow-vodokanal"
                 image="/files/proekt/moscow-vodokanal/01.avif"
-                name="г.Москва, АО «Мосводоканал»"
+                name="г.Москва, «Мосводоканал»"
             />
         </div>
         <div class="proekt-footer">

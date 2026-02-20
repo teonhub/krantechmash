@@ -40,38 +40,46 @@
                 </div>
             </div>
             <div class="proekt-gallery">
-                <picture>
-                    <source srcset="/files/proekt/kolomna-vpk-odnobalochniy/02.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/kolomna-vpk-odnobalochniy/02.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/kolomna-vpk-odnobalochniy/03.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/kolomna-vpk-odnobalochniy/03.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/kolomna-vpk-odnobalochniy/04.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/kolomna-vpk-odnobalochniy/04.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/kolomna-vpk-odnobalochniy/05.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/kolomna-vpk-odnobalochniy/05.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/kolomna-vpk-odnobalochniy/06.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/kolomna-vpk-odnobalochniy/06.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/kolomna-vpk-odnobalochniy/07.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/kolomna-vpk-odnobalochniy/07.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/kolomna-vpk-odnobalochniy/08.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/kolomna-vpk-odnobalochniy/08.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/kolomna-vpk-odnobalochniy/09.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/kolomna-vpk-odnobalochniy/09.avif" alt="" />
-                </picture>
+                <GalleryItem
+                    srcset="/files/proekt/kolomna-vpk-odnobalochniy/02.avif"
+                    src="/files/proekt/kolomna-vpk-odnobalochniy/02.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/kolomna-vpk-odnobalochniy/03.avif"
+                    src="/files/proekt/kolomna-vpk-odnobalochniy/03.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/kolomna-vpk-odnobalochniy/04.avif"
+                    src="/files/proekt/kolomna-vpk-odnobalochniy/04.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/kolomna-vpk-odnobalochniy/05.avif"
+                    src="/files/proekt/kolomna-vpk-odnobalochniy/05.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/kolomna-vpk-odnobalochniy/06.avif"
+                    src="/files/proekt/kolomna-vpk-odnobalochniy/06.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/kolomna-vpk-odnobalochniy/07.avif"
+                    src="/files/proekt/kolomna-vpk-odnobalochniy/07.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/kolomna-vpk-odnobalochniy/08.avif"
+                    src="/files/proekt/kolomna-vpk-odnobalochniy/08.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/kolomna-vpk-odnobalochniy/09.avif"
+                    src="/files/proekt/kolomna-vpk-odnobalochniy/09.avif"
+                    alt=""
+                />
                 <div class="link-back">
                     <NuxtLink to="/proekts">&larr; Вернуться в проекты</NuxtLink>
                 </div>
