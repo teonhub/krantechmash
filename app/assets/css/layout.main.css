@@ -504,6 +504,15 @@ main .grid-4{
     gap: 1px;
 }
 
+/* grid 3 */
+
+main .grid-3{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+}
+
 /* grid 5 */
 
 main .engineering .grid-5{
@@ -645,7 +654,12 @@ main .proekt a{
     position: relative;
 }
 
+main .proekt picture{
+    position: relative;
+}
+
 main .proekt picture img{
+    display: block;
     width: 100%;
     box-sizing: border-box;
     filter: grayscale(100%);
@@ -657,13 +671,25 @@ main .proekt picture img:hover{
     transition: all 0.3s ease-in-out 0s;
 }
 
+main .proekt picture::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: -webkit-linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(255, 255, 255, 0));
+    background: -moz-linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(255, 255, 255, 0));
+    background: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(255, 255, 255, 0));
+}
+
 main .proekt .icon-name{
     position: absolute;
     bottom: 25px;
     left: 30px;
     z-index: 200;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 
 main .proekt .proek-name{

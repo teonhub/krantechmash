@@ -381,6 +381,7 @@
     }
     main .proekt .proek-name {
         left: 30px;
+        bottom: 20px;
     }
     main .proekt .layout-btn a.btn-mode {
         justify-content: center;
@@ -424,6 +425,11 @@
     }
     main .proekt-wrap .proekt-gallery picture img {
         border-radius: 4px;
+    }
+    main .proekt picture::after{
+        background: -webkit-linear-gradient(0deg, rgb(0, 0, 0, 0.8), rgb(255, 255, 255, 0));
+        background: -moz-linear-gradient(0deg, rgb(0, 0, 0, 0.8), rgb(255, 255, 255, 0));
+        background: linear-gradient(0deg, rgb(0, 0, 0, 0.8), rgb(255, 255, 255, 0));
     }
     footer {
         padding: 100px 40px 40px 40px;

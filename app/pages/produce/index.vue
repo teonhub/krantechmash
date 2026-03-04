@@ -5,14 +5,14 @@
 
     useHead({
         link: [{ rel: 'canonical', href: `${baseUrl}${route.path}` }],
-        title: 'Продукция | ПК «Крантехмаш»',
+        title: 'Продукция грузоподъемного оборудования ПК «Крантехмаш»',
         meta:
             [
-                { name: 'description', content: '' },
-                { name: 'keywords', content: '' },
-                { property: 'og:title', content: '' },
-                { property: 'og:description', content: '' },
-                { property: 'og:image', content: '' },
+                { name: 'description', content: 'Производство грузоподъемного оборудования от ПК «Крантехмаш». Мы производим под ключ опорные однобалочные и двухбалочный краны, подвесные однопролетные или двухпролетный, а также козловые и консольные краны. Концевые балки к опорному или подвесному крану'},
+                { name: 'keywords', content: 'подвесной однопролетный, подвесной двухпролетный, козловой кран, консольный электрический, консольный ручной, опорный кран' },
+                { property: 'og:title', content: 'Продукция грузоподъемного оборудования ПК «Крантехмаш»' },
+                { property: 'og:description', content: 'Производство грузоподъемного оборудования от ПК «Крантехмаш». Мы производим под ключ опорные однобалочные и двухбалочный краны, подвесные однопролетные или двухпролетный, а также козловые и консольные краны. Концевые балки к опорному или подвесному крану' },
+                { property: 'og:image', content: '/image/short/shorts-001.jpg' },
                 { property: 'og:url', content: 'https://ktmcranes.ru'+`${route.path}` },
                 { property: 'og:type', content: 'website' },
                 { property: 'og:site_name', content: 'ПК «Крантехмаш»' },

@@ -11,7 +11,6 @@ Disallow: /phpmailer/
 Disallow: /files/pdf/
 Disallow: /agreement.html
 Disallow: /cookie.html
-Disallow: /vacancy.html
 Disallow: /*?etext=
 Disallow: /*?ybaip=
 
@@ -27,7 +26,6 @@ Disallow: /phpmailer/
 Disallow: /files/pdf/
 Disallow: /agreement.html
 Disallow: /cookie.html
-Disallow: /vacancy.html
 Disallow: /*?etext=
 Disallow: /*?ybaip=
 

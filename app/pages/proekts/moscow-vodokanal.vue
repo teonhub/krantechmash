@@ -36,30 +36,35 @@
                 </div>
                 <h1>«Мосводоканал»</h1>
                 <div class="proekt-tech">
-                    Кран консольный ручной: грузоподъёмность 0.5 тонн<br>Срок изготовления: 20 рабочих дней
+                    Кран консольный ручной<br>Грузоподъёмность 0.5 тонн<br>Срок изготовления: 20 рабочих дней
                 </div>
             </div>
             <div class="proekt-gallery">
-                <picture>
-                    <source srcset="/files/proekt/moscow-vodokanal/02.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/moscow-vodokanal/02.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/moscow-vodokanal/03.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/moscow-vodokanal/03.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/moscow-vodokanal/04.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/moscow-vodokanal/04.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/moscow-vodokanal/05.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/moscow-vodokanal/05.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/moscow-vodokanal/06.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/moscow-vodokanal/06.avif" alt="" />
-                </picture>
+                <GalleryItem
+                    srcset="/files/proekt/moscow-vodokanal/02.avif"
+                    src="/files/proekt/moscow-vodokanal/02.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/moscow-vodokanal/03.avif"
+                    src="/files/proekt/moscow-vodokanal/03.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/moscow-vodokanal/04.avif"
+                    src="/files/proekt/moscow-vodokanal/04.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/moscow-vodokanal/05.avif"
+                    src="/files/proekt/moscow-vodokanal/05.avif"
+                    alt=""
+                />
+                <GalleryItem
+                    srcset="/files/proekt/moscow-vodokanal/06.avif"
+                    src="/files/proekt/moscow-vodokanal/06.avif"
+                    alt=""
+                />
                 <div class="link-back">
                     <NuxtLink to="/proekts">&larr; Вернуться в проекты</NuxtLink>
                 </div>
