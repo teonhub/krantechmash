@@ -14,7 +14,7 @@
         <NuxtLink :to="url">
             <picture>
                 <source :srcset="image" media="(min-width: 600px)" />
-                <img :src="image" alt="{{ name }}" />
+                <img :src="image" :alt="name" />
             </picture>
             <div class="engin-name">{{ name }}</div>
             <div class="engin-price">До: {{ price }}</div>

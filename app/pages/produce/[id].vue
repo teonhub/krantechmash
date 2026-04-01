@@ -90,6 +90,7 @@
                             <p><a href="tel:+79313787378" class="button-phone">Тел. +7 931 378 73 78</a></p>
                         </div>
                     </div>
+                    <div class="product-content" v-html="product.html"></div>
                 </div>
                 <div v-else>
                     <div class="not-found">
@@ -98,6 +99,7 @@
                     </div>
                 </div>
             </div>
+            
             <AppShorts />
         </main>
 </template>

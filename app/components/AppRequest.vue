@@ -13,19 +13,47 @@
                     type: 'inline',
                     dragToClose: false,
                 }
-            ], {
-            closeButton: false,
-            on: {
+            ],{
+                closeButton: false,
+                on: {
                     close: () => {
-                    close();
+                        close();
+                    }
                 }
-            }
-        });
+            });
         } else {
             Fancybox.close();
         }
     });
 
+    const trackGoal = async (event) => {
+        event.preventDefault();
+        console.log('Отправика цель в Яндекс Метрику...');
+        if (typeof ym === 'function') {
+            ym(69875563, 'reachGoal', 'sent-button');
+            console.log('Цель "sent-button" отправлена в Яндекс Метрику');
+        } else {
+            console.warn('Яндекс Метрика не загружена — цель не отправлена');
+        }
+
+        const form = event.target.form;
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: new FormData(form)
+            });
+
+        if (response.ok) {
+            console.log('Форма успешно отправлена на сервер');
+            close();
+        } else {
+            throw new Error('Ошибка отправки формы');
+        }
+        } catch (error) {
+            console.error('Ошибка при отправке формы:', error);
+            alert('Произошла ошибка при отправке формы. Попробуйте ещё раз.');
+        }
+    };
 </script>
 
 <template>
@@ -57,7 +85,7 @@
                 <p>Нажимая кнопку "Отправить", я даю своё согласие на обработку указанных мной персональных данных в соответствии с <NuxtLink to="/agreement">пользовательским соглашением</NuxtLink></p>
                 <div class="btns-layout">
                     <button class="btn-form" type="button" @click="close">Закрыть</button>
-                    <button class="btn-form" type="submit" name="submit">Отправить</button>
+                    <button class="btn-form" type="button" @click="trackGoal" name="submit">Отправить</button>
                 </div>
             </form>
         </div>
