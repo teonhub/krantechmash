@@ -50,13 +50,13 @@
         },
         {
             url: '/produce/suspended-single-span',
-            image: '/image/engineering/suspended-single-span.jpg',
+            image: '/image/engineering/suspended-dubble-span.jpg',
             name: 'Подвесной однопролетный',
             price: '16 т'
         },
         {
             url: '/produce/suspended-dubble-span',
-            image: '/image/engineering/suspended-dubble-span.jpg',
+            image: '/image/engineering/suspended-single-span.jpg',
             name: 'Подвесной двухпролетный',
             price: '16 т'
         },
@@ -69,7 +69,7 @@
         {
             url: '/produce/mobile-transshipment',
             image: '/image/engineering/mobile-transshipment.jpg',
-            name: 'Перегрузочное устройство',
+            name: 'Перегрузочное моб. устройство',
             price: '5 т'
         },
         {

@@ -3,10 +3,12 @@
     import { computed } from 'vue'
     import { useRoute } from 'vue-router'
     import { useProduceStore } from '~/stores/produce'
+    import { ref, watch } from 'vue'
 
     const baseUrl = 'https://ktmcranes.ru'
     const route = useRoute()
     const store = useProduceStore()
+    const currentImage = ref('')
     const product = computed(() => {
         return store.cranes.find(item => item.url === route.params.id)
     })
@@ -20,12 +22,12 @@
         { key: 'hoist', label: 'Способ управления электрической талью' },
         { key: 'lifting', label: 'Высота подъема (м)' },
         { key: 'mode', label: 'Режим работы' },
-        { key: 'climate', label: 'Климатическое исполнение (варианты по согласованному требованию)' },
+        { key: 'climate', label: 'Климатическое исполнение' },
         { key: 'execution', label: 'Исполнение' },
         { key: 'temperature', label: 'Температура эксплуатации крана' },
         { key: 'placement', label: 'Категория размещения крана' },
         { key: 'current', label: 'Электрический ток' },
-        { key: 'trials', label: 'Масса испытательных грузов при статических испытаниях - при динамических испытаниях' },
+        { key: 'trials', label: 'Масса испытательных грузов' },
         { key: 'speed', label: 'Скорость поворота стрелы крана (м/мин)' },
         { key: 'stability', label: 'Сейсмоустойчивость' },
         { key: 'management', label: 'Способ управления краном' },
@@ -40,19 +42,28 @@
     useHead({
         link: [{ rel: 'canonical', href: `${baseUrl}${route.path}` }],
         title: computed(() => product.value? `${product.value.name} | ПК Крантехмаш` : 'Товар не найден'),
-        meta:
-            [
-                { name: 'description', content: computed(() => product.value?.seo_descrip) },
-                { name: 'keywords', content: computed(() => product.value?.seo_keyword) },
-                { property: 'og:title', content: computed(() => product.value?.name) },
-                { property: 'og:description', content: computed(() => product.value?.seo_descrip) },
-                { property: 'og:image', content: '/image/short/shorts-001.jpg' },
-                { property: 'og:url', content: 'https://ktmcranes.ru'+`${route.path}` },
-                { property: 'og:type', content: 'website' },
-                { property: 'og:site_name', content: 'ПК Крантехмаш' },
-                { property: 'og:locale', content: 'ru_RU' }
-            ]
-        })
+        meta: [
+            { name: 'description', content: computed(() => product.value?.seo_descrip) },
+            { name: 'keywords', content: computed(() => product.value?.seo_keyword) },
+            { property: 'og:title', content: computed(() => product.value?.name) },
+            { property: 'og:description', content: computed(() => product.value?.seo_descrip) },
+            { property: 'og:image', content: '/image/short/shorts-001.jpg' },
+            { property: 'og:url', content: 'https://ktmcranes.ru'+`${route.path}` },
+            { property: 'og:type', content: 'website' },
+            { property: 'og:site_name', content: 'ПК Крантехмаш' },
+            { property: 'og:locale', content: 'ru_RU' }
+        ]
+    })
+
+    watch(product, (newProduct) => {
+        if (newProduct) {
+                currentImage.value = newProduct.image_a
+            }
+        }, { immediate: true })
+
+    const changeImage = (img: string) => {
+        currentImage.value = img
+    }
 
 </script>
 
@@ -60,57 +71,85 @@
     <main>
         <AppLayoutHeading v-if="product" :title="product.name" />
             <div class="engineering-page">
-                <div v-if="product" class="engineering-layout">
-                    <div class="engineering-image">
-                        <img :src="`/image/engineering/${product.image}`" :alt="product.name" />
-                    </div>
-                    <div class="table-layout">
-                        <table class="specs-table">
-                            <tbody>
-                                <tr>
-                                    <td colspan="2" class="heading-table">Характеристики продукции</td>
-                                </tr>
-                                <tr>
-                                    <td>Параметры</td>
-                                    <td>Значения</td>
-                                </tr>
-                                <template v-for="field in productFields" :key="field.key">
-                                    <tr v-if="product[field.key as keyof typeof product]">
-                                        <td>{{ field.label }}</td>
-                                        <td>{{ product[field.key as keyof typeof product] }}</td>
-                                    </tr>
-                                </template>
-                            </tbody>
-                        </table>
-                        <div v-if="product.certificate" class="button-certificate">
-                            <a :href="`/files/pdf/${product.certificate}`" target="_blank">Сертификат соответствия PDF</a>
+                <div v-if="product">
+                    <div class="engineering-layout">
+                        <div class="engineering-image">
+                            <transition name="fade" mode="out-in">
+                                <img class="main-image"
+                                    :key="currentImage"
+                                    :src="`/image/engineering/${currentImage}`"
+                                    :alt="product.name"
+                                />
+                            </transition>
+                            <div class="image-control">
+                                <img
+                                    :src="`/image/engineering/${product.image_a}`"
+                                    :alt="product.name"
+                                    @click="changeImage(product.image_a)"
+                                />
+                                <img
+                                    :src="`/image/engineering/${product.image_b}`"
+                                    :alt="product.name"
+                                    @click="changeImage(product.image_b)"
+                                />
+                                <img
+                                    :src="`/image/engineering/${product.image_c}`"
+                                    :alt="product.name"
+                                    @click="changeImage(product.image_c)"
+                                />
+                            </div>
                         </div>
-                        <div class="support">
-                            <p>Узнать стоимость продукции можно по телефону или почте <a href="mailto:info@ktmcranes.ru">info@ktmcranes.ru</a> Рассчитаем цену по вашим параметрам. Мы работаем с 8:00 до 18:00, Пн. – Пт.</p>
-                            <p><a href="tel:+79313787378" class="button-phone">Тел. +7 931 378 73 78</a></p>
+                        <div class="product-card-wrapper">
+                            <div class="add-btns">
+                                <div class="add-btn">
+                                    <NuxtLink to="/proekts">
+                                        <span>Реализованные проекты</span>
+                                    </NuxtLink>
+                                </div>
+                                <div class="add-btn" v-if="product.certificate">
+                                    <a :href="`/files/pdf/${product.certificate}`" target="_blank">
+                                        <span>Сертификат PDF</span>
+                                    </a>
+                                </div>
+                                <div class="add-btn">
+                                    <NuxtLink to="/produce">
+                                        <span>Вся продукция</span>
+                                    </NuxtLink>
+                                </div>
+                            </div>
+                        <div class="table-layout">
+                            <template v-for="field in productFields" :key="field.key">
+                                <div class="product-card-parameters" v-if="product[field.key as keyof typeof product]">
+                                    <div class="product-card-parameter -heading">{{ field.label }}</div>
+                                    <div class="product-card-parameter">{{ product[field.key as keyof typeof product] }}</div>
+                                </div>
+                            </template>
                         </div>
                     </div>
-                    <div class="product-content" v-html="product.html"></div>
                 </div>
-                <div v-else>
-                    <div class="not-found">
-                        <h1>Товар не найден</h1>
-                        <p><NuxtLink to="/produce">вернуться в каталог</NuxtLink></p>
-                    </div>
+                <div class="product-inner">
+                    <div class="product-content" v-html="product.html_a"></div>
+                    <div class="product-content" v-html="product.html_b"></div>
+                    <div class="product-content"></div>
                 </div>
             </div>
-            
-            <AppShorts />
-        </main>
+            <div v-else>
+                <div class="not-found">
+                    <h1>Товар не найден</h1>
+                    <p><NuxtLink to="/produce">вернуться в каталог</NuxtLink></p>
+                </div>
+            </div>
+        </div>
+    <AppShorts />
+    </main>
 </template>
 
 <style scoped>
 
 .engineering-page {
-    background-color: #fff;
+    background-color: #000;
     border-radius: 30px;
     margin-top: 1px;
-    margin-bottom: 1px;
 }
 
 .engineering-layout {
@@ -118,17 +157,31 @@
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
+    border-radius: 30px;
+    background-color: #fff;
+    margin-bottom: 1px;
 }
 
-.engineering-image {
+.engineering-layout .engineering-image {
     box-sizing: border-box;
     padding: 30px;
     text-align: center;
 }
 
-.engineering-page .table-layout {
+.engineering-layout .engineering-image img {
+    max-width: 520px;
+}
+
+.engineering-layout .product-card-wrapper {
     box-sizing: border-box;
-    margin: 35px 35px 60px 35px;
+    padding: 60px 30px 60px 0;
+}
+
+.engineering-layout .table-layout {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
     /*
     border: 1px solid #eee;
     border-radius: 30px;
@@ -136,95 +189,65 @@
     */
 }
 
-.engineering-page .table-layout table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: "PT Mono", serif;
-    font-size: 13px;
-}
-
-.engineering-page .table-layout table tr {
-    height: 60px;
-}
-
-.engineering-page .table-layout table tr td {
-    width: 50%;
-    padding: 20px 15px;
-    line-height: 20px;
-}
-
-.engineering-page .table-layout table tr:nth-child(odd) {
-    background-color: #f2f2f2;
-}
-
-.engineering-page .table-layout table tr td.heading-table {
-    background-color: #e6d20f;
-    color: #000;
-}
-
-.engineering-page .button-certificate a {
-    display: flex;
-    justify-content: space-between;
-    width: 280px; height: 50px;
-    margin-top: 50px;
-    text-decoration: none;
+.engineering-layout .table-layout .product-card-parameters {
+    font-size: 15px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    line-height: 22px;
+    border: 1px dashed #ddd;
     box-sizing: border-box;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
-    background-color: #000;
-    color: #fff;
-    line-height: 49px;
-    border-radius: 5px;
-    padding: 0 40px 0 25px;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.engineering-layout .table-layout .product-card-parameter.-heading {
+    font-weight: 600;
+}
+
+.engineering-layout .table-layout .product-card-parameter {
+    font-weight: 400;
+}
+
+.engineering-layout .add-btns{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.engineering-layout .add-btns .add-btn a{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 35px;
+    text-decoration: none;
+    border-bottom: 1px solid #5d5d5d;
+    color: #000;
     font-size: 14px;
-    font-family: "PT Mono", serif;
-    padding-bottom: 5px;
-    letter-spacing: -0.2px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    letter-spacing: -.3px;
+    padding-bottom: 2px;
     transition: all 0.3s ease-in-out 0s;
 }
 
-.engineering-page .button-certificate a:hover {
-    background-color: #1d55cd;
+.engineering-layout .add-btns .add-btn a:hover {
+    color: #276bfb;
+    border-bottom: 1px solid #276bfb;
     transition: all 0.3s ease-in-out 0s;
 }
 
-.engineering-page .support {
+.engineering-layout .support {
     max-width: 500px;
     box-sizing: border-box;
     padding: 50px 0;
 }
 
-.engineering-page .support p {
-    font-size: 15px;
-    font-family: "PT Mono", serif;
-    line-height: 24px;
-    padding: 0;
-    margin: 0;
-}
-
-.engineering-page .support a {
-    color: #000;
-    text-decoration: none;
-}
-
-.engineering-page .support a.button-phone {
-    display: block;
-    margin-top: 45px;
-    font-size: 53px;
-    font-family: 'Condens';
-    text-decoration: none;
-    color: #000;
-}
-
-.engineering-page .support p span {
-    text-transform: lowercase;
-}
-
-.not-found {
+.engineering-layout .not-found {
     text-align: center;
     padding: 90px 40px;
 }
 
-.not-found h1 {
+.engineering-layout .not-found h1 {
     padding: 0px 0 10px 0;
     font-family: 'Condens';
     text-transform: uppercase;
@@ -233,7 +256,7 @@
     text-align: center;
 }
 
-.not-found a {
+.engineering-layout .not-found a {
     display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid #bbbbbb;
@@ -243,54 +266,100 @@
     color: #000;
 }
 
+.product-inner {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+}
+
+.engineering-layout .image-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.engineering-layout .image-control img {
+    display: block;
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor:pointer;
+    border: 1px solid #ebebeb;
+    transition:0.3s;
+    object-fit: cover;
+}
+
+.engineering-layout .image-control img:hover {
+    border-color: #000;
+}
+
+.engineering-layout .fade-enter-active,
+.engineering-layout .fade-leave-active {
+    transition: opacity 0.35s ease;
+}
+
+.engineering-layout .fade-enter-from,
+.engineering-layout .fade-leave-to {
+    opacity: 0;
+}
+
+.engineering-layout .fade-enter-to,
+.engineering-layout .fade-leave-from {
+    opacity: 1;
+}
+
 @media (max-width: 575.98px) {
     .engineering-layout {
         display: flex;
         flex-direction: column;
         gap: 0;
     }
-
-    /*
-    .engineering-page {
-        background: #000;
+    .product-inner {
+        grid-template-columns: 1fr;
     }
-    .engineering-image {
-        padding: 0 40px 40px 40px;
+    .engineering-layout .table-layout {
+        margin: 0 30px 30px 30px;
+        grid-template-columns: 1fr;
     }
-    .engineering-image img {
-        border-radius: 15px;
+    .engineering-layout .engineering-image img {
+        max-width: 100%;
     }
-    .engineering-page .table-layout table tr:nth-child(odd) {
-        background-color: #181818;
+    .engineering-layout .image-control {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-    */
-
-    .engineering-page .table-layout{
-        margin: 0 20px 40px 20px;
+    .engineering-layout .image-control img {
+        width: 80px;
+        height: 80px;
     }
-    .engineering-page .table-layout table {
-        hyphens: auto;
-        font-size: 13px;
+    .engineering-layout .product-card-wrapper {
+        padding: 0;
     }
-    .engineering-page .table-layout table tr td {
-        padding: 20px 10px;
-    }
-    .button-certificate {
-        padding: 0 30px;
-    }
-    .engineering-page .button-certificate a {
-        width: 100%;
-    }
-    .engineering-page .support {
-        padding: 30px;
-    }
-    .engineering-page .support p {
+    .engineering-layout .table-layout .product-card-parameters {
         font-size: 14px;
     }
-    .engineering-page .support a.button-phone {
+    .engineering-layout .button-certificate {
+        text-align: center;
+    }
+    .engineering-layout .button-certificate a {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    .engineering-layout .support {
+        padding: 30px 20px 15px 20px;
+    }
+    .engineering-layout .support p {
+        font-size: 14px;
+    }
+    .engineering-layout .support a.button-phone {
         font-size: 40px;
     }
-    .not-found h1 {
+    .engineering-layout .not-found h1 {
         font-size: 52px;
         padding: 40px 0 0 0;
     }

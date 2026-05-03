@@ -8,7 +8,7 @@ html{
   font-size: 62.5%; /* (16px * 0.625 = 10px) */
 }
 
-header.device-575 {
+header.device-575, .calling-mobile{
     display: none;
 }
 
@@ -69,7 +69,9 @@ header .layout-menu nav ul li a.menu-link-content{
     color: #000;
     text-decoration: none;
     padding: 0 15px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    letter-spacing: -.3px;
     font-size: 15px;
     transition: all 0.3s  ease-in-out 0s;
 }
@@ -94,9 +96,10 @@ header .layout-menu nav ul li a.menu-link-content.dropdown .icon-items{
 header .layout-start{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 85px;
-    padding: 0 10px 0 0px;
+    box-sizing: border-box;
+    padding: 0 20px;
 }
 
 header .layout-start .btn-mode a{
@@ -108,22 +111,23 @@ header .layout-start .btn-mode a{
     margin: 0 28px;
 }
 
-
 header .layout-start button.btn-start{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 83%;
+    width: 100%;
     height: 56px;
+    line-height: 54px;
     border-radius: 5px;
     background-color: #000000;
     box-sizing: border-box;
     padding: 0 30px;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
     text-align: left;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px;
     font-size: 15px;
-    letter-spacing: -0.2px;
     color: #fff;
     cursor: pointer;
     transition: all 0.3s  ease-in-out 0s;
@@ -172,8 +176,10 @@ main .salutation .inner-left .heading .paragrah-large{
 main .salutation .inner-left .paragrah-small{
     font-size: 15px;
     line-height: 24px;
-    color: #000000;
-    font-family: "PT Mono", serif;
+    color: #000;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px; 
 }
 
 main .salutation .inner-left a.btm-proekt{
@@ -182,16 +188,17 @@ main .salutation .inner-left a.btm-proekt{
     align-items: center;
     max-width: 100%;
     height: 56px;
-    line-height: 55px;
+    line-height: 54px;
     background-color: #000;
     box-sizing: border-box;
     padding: 0 25px;
     text-decoration: none;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
     border-radius: 5px;
-    font-family: "PT Mono", serif;
     font-size: 15px;
-    letter-spacing: -0.2px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px;
     color: #fff;
     transition: all 0.3s ease-in-out 0s;
 }
@@ -225,7 +232,9 @@ main .salutation .inner-right .layout-phone{
     margin-top: 40px;
     color: #000;
     font-size: 15px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
 }
 
 main .salutation .inner-right .layout-phone a{
@@ -284,7 +293,7 @@ main .salutation .inner-center::after{
 
 main .salutation .inner-center .video-wrapper{
     position: relative;
-    width: 95%;
+    width: 99%;
     height: 90%;
     margin: 0 auto;
     margin-top: 20px;
@@ -422,10 +431,11 @@ main .engineering .grid-4 .engin-wrap .engin-load{
 }
 
 main .engineering .grid-4 .engin-wrap .engin-name{
-    font-family: "Exo 2", serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "IBM Plex Mono", monospace;
+    letter-spacing: -.7px;
     margin-bottom: 15px;
-    font-size: 18px;
-    font-weight: 700;
 }
 
 main .engineering .grid-4 .engin-wrap .engin-price{
@@ -435,8 +445,9 @@ main .engineering .grid-4 .engin-wrap .engin-price{
     padding: 0 15px;
     margin-bottom: 50px;
     font-size: 13px;
-    font-family: "PT Mono", serif;
-    letter-spacing: -0.2px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px;
     text-align: center;
     border-radius: 3px;
     background-color: #f5f5f5;
@@ -449,13 +460,14 @@ main .engineering .grid-4 .engin-wrap .engin-more{
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
     background-color: #000;
     color: #fff;
-    line-height: 55px;
+    line-height: 54px;
     border-radius: 5px;
     padding: 0 40px 0 25px;
-    font-size: 14px;
-    font-family: "PT Mono", serif;
+    font-size: 15px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px;
     padding-bottom: 5px;
-    letter-spacing: -0.2px;
     transition: all 0.3s ease-in-out 0s;
 }
 
@@ -609,7 +621,9 @@ main .proekt-wrap .proekt-heading .proekt-inner{
     max-width: 800px;
     padding-left: 80px;
     font-size: 15px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
     line-height: 24px;
 }
 
@@ -696,7 +710,9 @@ main .proekt .proek-name{
     display: inline-block;
     position: absolute;
     bottom: 30px; left: 70px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px;
     font-size: 14px;
     color: #fff;
 }
@@ -725,10 +741,11 @@ main .proekt .layout-btn a.btn-mode{
     line-height: 55px;
     border-radius: 5px;
     padding: 0 40px 0 25px;
-    font-size: 14px;
-    font-family: "PT Mono", serif;
+    font-size: 15px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px;
     padding-bottom: 5px;
-    letter-spacing: -0.2px;
     transition: all 0.3s ease-in-out 0s;
 }
 
@@ -777,7 +794,9 @@ main .proekt-wrap .proekt-inner{
     padding: 0 25px;
     color: #fff;
     font-size: 15px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
     line-height: 24px;
     text-align: center;
 }
@@ -816,7 +835,9 @@ main .link-back{
 }
 
 main .link-back a{
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
     text-transform: none;
     font-size: 15px;
     font-weight: 500;
@@ -880,7 +901,9 @@ main .shorts-wrap .shorts-inner .continue{
 
 main .shorts-wrap .shorts-inner .continue .continue-inner{
     font-size: 15px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
     line-height: 24px;
 }
 
@@ -897,9 +920,10 @@ main .shorts-wrap .shorts-inner .continue a.btm-offer{
     text-decoration: none;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
     border-radius: 12px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px;
     font-size: 15px;
-    letter-spacing: -0.2px;
     color: #fff;
     transition: all 0.3s ease-in-out 0s;
 }
@@ -955,7 +979,9 @@ main .shorts-items .short .short-inner a .icon-play{
 
 main .shorts-items .short .short-inner a .media-size{
     color: #fff;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
     font-size: 13px;
     line-height: 54px;
     position: absolute;
@@ -984,7 +1010,9 @@ main .content-page .contact-items {
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px;
     font-size: 15px;
     line-height: 26px;
 }
@@ -1024,18 +1052,50 @@ main .content-page .cookie h3 {
     font-size: 62px;
     line-height: 62px;
     font-weight: 100;
-
 }
 
 main .content-page .cookie p{
     text-align: justify;
     hyphens: auto;
     font-size: 15px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
     line-height: 24px;
     padding: 0;
     margin: 30px 0 70px 0;
 }
+
+.engineering-page .product-content {
+    padding: 60px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    font-size: 15px;
+    line-height: 26px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.engineering-page .product-content h2{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 72px;
+    line-height: 72px;
+    text-transform: uppercase;
+    font-family: 'Condens';
+    text-decoration: none;
+    color: #000;
+    font-weight: 100;
+}
+
+.engineering-page .product-content p{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    padding-bottom: 10px;
+}
+
 
 footer{
     position: relative;
@@ -1061,7 +1121,9 @@ footer .footer-wrap .layout-logotype .copyright{
 footer .footer-wrap .footer-items{
     padding: 25px;
     margin-bottom: 80px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
 }
 
 footer .footer-wrap .footer-items ul li{

@@ -9,8 +9,6 @@ Disallow: /sender-tpl.html
 Disallow: /sender.form.php
 Disallow: /phpmailer/
 Disallow: /files/pdf/
-Disallow: /agreement.html
-Disallow: /cookie.html
 Disallow: /*?etext=
 Disallow: /*?ybaip=
 
@@ -24,8 +22,6 @@ Disallow: /sender-tpl.html
 Disallow: /sender.form.php
 Disallow: /phpmailer/
 Disallow: /files/pdf/
-Disallow: /agreement.html
-Disallow: /cookie.html
 Disallow: /*?etext=
 Disallow: /*?ybaip=
 

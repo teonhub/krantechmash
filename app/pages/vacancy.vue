@@ -103,7 +103,9 @@
 }
 
 .vacans-layout ul{
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px;
     margin-bottom: 30px;
 }
 
@@ -133,9 +135,10 @@
     border-radius: 5px;
     padding: 0 40px 0 25px;
     font-size: 14px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: -.3px;
     padding-bottom: 5px;
-    letter-spacing: -0.2px;
     transition: all 0.3s ease-in-out 0s;
 }
 

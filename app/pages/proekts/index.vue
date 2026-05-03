@@ -56,19 +56,19 @@
                     name="г.н.Баскунчак, «Руссоль»"
                 />
                 <AppProektItem 
-                    url="/proekts/kolomna-vpk"
-                    image="/files/proekt/kolomna-vpk/01.avif"
-                    name="г.Коломна, ВПК"
+                    url="/proekts/volgograd-prom-1"
+                    image="/files/proekt/volgograd-prom-1/01.avif"
+                    name="г.Волгоград, Пром.предприятие"
                 />
                 <AppProektItem 
-                    url="/proekts/kolomna-vpk-odnobalochniy"
-                    image="/files/proekt/kolomna-vpk-odnobalochniy/01.avif"
-                    name="г.Коломна, ВПК"
+                    url="/proekts/volgograd-prom-2"
+                    image="/files/proekt/volgograd-prom-3/01.avif"
+                    name="г.Волгоград, Пром.предприятие"
                 />
                 <AppProektItem 
-                    url="/proekts/kolomna-vpk-5"
-                    image="/files/proekt/kolomna-vpk-5/01.avif"
-                    name="г.Коломна, ВПК"
+                    url="/proekts/volgograd-prom-3"
+                    image="/files/proekt/volgograd-prom-2/01.avif"
+                    name="г.Волгоград, Пром.предприятие"
                 />
             </div>
         </div>

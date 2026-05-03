@@ -126,16 +126,20 @@
     border-radius: 4px;
     display: block;
     font-size: 15px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
     height: 56px;
-    margin: 0 0 8px 0;
-    padding: 5px 15px 0;
+    margin: 0 0 6px 0;
+    padding: 0 15px;
     width: 100%;    
 }
 
 .modal-layout p {
     font-size: 13px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
     line-height: 21px;
     padding: 20px 0 40px 0;
 }
@@ -162,7 +166,9 @@
     line-height: 52px;
     border-radius: 6px;
     font-size: 14px;
-    font-family: "PT Mono", serif;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -.3px;
     transition: all 0.3s ease-in-out 0s;
 }
 

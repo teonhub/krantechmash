@@ -5,7 +5,7 @@
         image: string,
         name: string
     }>();
-    
+ 
 </script>
 
 <template>
@@ -25,9 +25,9 @@
             </div>
         </NuxtLink>
 
-            <div class="layout-btn">
-                <NuxtLink :to="url" class="btn-mode">
-                    <div>Подробнее</div>
+        <div class="layout-btn">
+            <NuxtLink :to="url" class="btn-mode">
+                <div>Подробнее</div>
                     <div class="arrow-right">
                         <svg width="16" height="16" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.3319 10.4129H0" stroke="#ffffff" stroke-width="2"/>
@@ -36,5 +36,5 @@
                     </div>
                 </NuxtLink>
             </div>
-    </div>
+        </div>
 </template>

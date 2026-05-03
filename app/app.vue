@@ -4,5 +4,6 @@
     <NuxtPage />
     <AppFooter />
     <AppRequest />
+    <AppCall />
     </div>
 </template>
