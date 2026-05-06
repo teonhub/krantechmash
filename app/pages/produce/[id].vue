@@ -92,11 +92,6 @@
                                     :alt="product.name"
                                     @click="changeImage(product.image_b)"
                                 />
-                                <img
-                                    :src="`/image/engineering/${product.image_c}`"
-                                    :alt="product.name"
-                                    @click="changeImage(product.image_c)"
-                                />
                             </div>
                         </div>
                         <div class="product-card-wrapper">
@@ -128,9 +123,8 @@
                     </div>
                 </div>
                 <div class="product-inner">
-                    <div class="product-content" v-html="product.html_a"></div>
-                    <div class="product-content" v-html="product.html_b"></div>
-                    <div class="product-content"></div>
+                    <div class="product-content" v-html="product.feature"></div>
+                    <div class="product-content" v-html="product.kit"></div>
                 </div>
             </div>
             <div v-else>
@@ -222,7 +216,7 @@
     text-decoration: none;
     border-bottom: 1px solid #5d5d5d;
     color: #000;
-    font-size: 14px;
+    font-size: 15px;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     letter-spacing: -.3px;
@@ -269,7 +263,7 @@
 .product-inner {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1px;
 }
 
