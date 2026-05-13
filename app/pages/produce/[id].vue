@@ -317,7 +317,7 @@
         grid-template-columns: 1fr;
     }
     .engineering-layout .table-layout {
-        margin: 0 30px 30px 30px;
+        margin: 0 40px 45px 40px;
         grid-template-columns: 1fr;
     }
     .engineering-layout .engineering-image img {
@@ -335,6 +335,19 @@
         padding: 0;
     }
     .engineering-layout .table-layout .product-card-parameters {
+        font-size: 14px;
+    }
+    .engineering-layout .add-btns{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 0 40px;
+        margin-bottom: 30px;
+    }
+    .engineering-layout .add-btns .add-btn a{
+        margin-bottom: 10px;
         font-size: 14px;
     }
     .engineering-layout .button-certificate {

@@ -1,11 +1,16 @@
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
     devtools: { enabled: true },
-    plugins: ['~/plugins/fancybox.client.ts'],
+    plugins: [
+        '~/plugins/fancybox.client.ts'
+    ],
     build: {
         transpile: ['@fancyapps/ui'],
     },
-    modules: ['@pinia/nuxt', 'yandex-metrika-module-nuxt3'],
+    modules: [
+        '@pinia/nuxt',
+        'yandex-metrika-module-nuxt3'
+    ],
     css: [
         '~/assets/css/typeface.css',
         '~/assets/css/normalize.css',
@@ -29,7 +34,7 @@ export default defineNuxtConfig({
             ],
             script: [
                 { src: '/files/js/dialog-polyfill.min.js', defer: true },
-                { src: '/files/js/sender.form.js', defer: true }
+                { src: '/files/js/sender.form.js', defer: true }    
             ],
         }
     },
@@ -43,7 +48,7 @@ export default defineNuxtConfig({
         defer: true
     },
     devServer: {
-    host: '0.0.0.0', // Разрешает доступ из локальной сети
-    port: 3000,      // Порт по умолчанию
-  }
+        host: '0.0.0.0',
+        port: 3000,
+    }
 })
