@@ -19,6 +19,7 @@
     "yandex-metrika-module-nuxt3": "^1.5.3"
   },
   "devDependencies": {
+    "@nuxtjs/sitemap": "^8.0.15",
     "nuxt-yandex-metrika": "^2.0.2"
   }
 }

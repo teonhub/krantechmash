@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     },
     modules: [
         '@pinia/nuxt',
-        'yandex-metrika-module-nuxt3'
+        'yandex-metrika-module-nuxt3',
+        '@nuxtjs/sitemap'
     ],
     css: [
         '~/assets/css/typeface.css',
@@ -50,5 +51,10 @@ export default defineNuxtConfig({
     devServer: {
         host: '0.0.0.0',
         port: 3000,
-    }
+    },
+    site: {
+        url: 'https://ktmcranes.ru',
+    },
+    sitemap: {
+    },
 })

@@ -164,6 +164,7 @@
 
 .engineering-layout .engineering-image img {
     max-width: 520px;
+    border-radius: 4px;
 }
 
 .engineering-layout .product-card-wrapper {
