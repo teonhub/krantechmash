@@ -1,6 +1,6 @@
 <template>
     <header>
-    <AppHeaderLogo />
+    <AppLogotype color="black" />
     <AppHeaderMenu />
     <AppHeaderStart />
     </header>

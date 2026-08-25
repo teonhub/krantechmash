@@ -5,13 +5,13 @@
 
     useHead({
         link: [{ rel: 'canonical', href: `${baseUrl}${route.path}` }],
-        title: 'Проект: промышленное предприятие г.Волгоград - кран опорный двухбалочный',
+        title: 'Проект : промышленное предприятие г.Волгоград - кран опорный двухбалочный',
         meta:
             [
-                { name: 'description', content: 'Реализованные проекты ПК Крантехмаш' },
-                { name: 'keywords', content: 'проекты крантехмаш' },
-                { property: 'og:title', content: 'Проекты | ПК Крантехмаш' },
-                { property: 'og:description', content: '' },
+                { name: 'description', content: 'Реализованный проект крана опорного двухбалочного грузоподъёмностью до 20 тонн, для промышленного предприятия в городе Волгоград' },
+                { name: 'keywords', content: 'проекты крантехмаш, кран опорный двухбалочный, кран двухбалочный, кран опорный' },
+                { property: 'og:title', content: 'Реализованный проект крана опорного двухбалочного' },
+                { property: 'og:description', content: 'Реализованный проект крана опорного двухбалочного грузоподъёмностью до 20 тонн, для промышленного предприятия в городе Волгоград' },
                 { property: 'og:image', content: '/image/short/shorts-001.jpg' },
                 { property: 'og:url', content: 'https://ktmcranes.ru'+`${route.path}` },
                 { property: 'og:type', content: 'website' },
@@ -26,44 +26,53 @@
     <main>
         <div class="proekt-wrap">
             <div class="proekt-inner">
-                <div class="proekt-local">
-                    <div class="local-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" fill="#ffffff" viewBox="-5.0 -10.0 110.0 115.0">
-                            <path d="m65.25 43.281c-1.0195 21.02-30.613 19.336-30.375 0-0.21484-19.445 29.387-20.914 30.375 0zm21.281 0c1.1562 31.062-36.031 50.469-36.531 49.969-1.125 0-37.406-18.562-36.531-49.969 0-13.051 6.9609-25.109 18.266-31.637 11.305-6.5273 25.227-6.5273 36.531 0 11.305 6.5273 18.266 18.586 18.266 31.637zm-15.031 0c-1.6562-29.625-42.852-27.367-42.875 0-0.14062 5.7227 2.0625 11.254 6.0977 15.312s9.5547 6.293 15.277 6.1875c5.6992-0.011719 11.16-2.2773 15.191-6.3086s6.2969-9.4922 6.3086-15.191z"/>
-                        </svg>
-                    </div>
-                    <div>г.Волгоград</div>
-                </div>
                 <h1>Промышленное предприятие</h1>
                 <div class="proekt-tech">
-                    Кран опорный двухбалочный<br>Грузоподъёмность 20 тонн<br>Срок изготовления: 35 рабочих дней
+                    <ul>
+                        <li><span>Тип изделия</span>кран порный двухбалочный</li>
+                        <li><span>Грузоподъёмность</span>до 20 тонн</li>
+                        <li><span>Срок изготовления</span>35 рабочих дней</li>
+                        <li><span>Локация заказчика</span>город Волгоград</li>
+                    </ul>
+                </div>
+                <div class="proekt-content">
+                    <p>Для волгоградского промышленного предприятия был спроектирован и изготовлен опорный двухбалочный кран. Оборудование рассчитано на высокие нагрузки в цехе заказчика весом до 20 тонн. Двухбалочная конструкция обеспечивает повышенную жёсткость и устойчивость при подъёме крупногабаритных грузов. Производство завершено за 35 рабочих дней, после чего кран доставлен и смонтирован на объекте. Проведены испытания под нагрузкой, подписан акт приёмки, передана нормативно-техническая документация.</p>
                 </div>
             </div>
             <div class="proekt-gallery">
-                <picture>
-                    <source srcset="/files/proekt/volgograd-prom-1/02.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/volgograd-prom-1/02.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/volgograd-prom-1/03.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/volgograd-prom-1/03.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/volgograd-prom-1/04.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/volgograd-prom-1/04.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/volgograd-prom-1/05.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/volgograd-prom-1/05.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/volgograd-prom-1/06.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/volgograd-prom-1/06.avif" alt="" />
-                </picture>
-                <picture>
-                    <source srcset="/files/proekt/volgograd-prom-1/07.avif" media="(min-width: 600px)" />
-                    <img src="/files/proekt/volgograd-prom-1/07.avif" alt="" />
-                </picture>
+                <GalleryItem
+                    srcset="/files/proekt/volgograd-prom-1/02-600w.avif"
+                    src="/files/proekt/volgograd-prom-1/02.avif"
+                    alt="Монтаж порного двухбалочного крана"
+                />
+                <GalleryItem
+                    srcset="/files/proekt/volgograd-prom-1/03-600w.avif"
+                    src="/files/proekt/volgograd-prom-1/03.avif"
+                    alt="Монтаж порного двухбалочного крана"
+                />
+                <GalleryItem
+                    srcset="/files/proekt/volgograd-prom-1/04-600w.avif"
+                    src="/files/proekt/volgograd-prom-1/04.avif"
+                    alt="Монтаж порного двухбалочного крана"
+                />
+                <GalleryItem
+                    srcset="/files/proekt/volgograd-prom-1/05-600w.avif"
+                    src="/files/proekt/volgograd-prom-1/05.avif"
+                    alt="Монтаж порного двухбалочного крана"
+                />
+                <GalleryItem
+                    srcset="/files/proekt/volgograd-prom-1/06-600w.avif"
+                    src="/files/proekt/volgograd-prom-1/06.avif"
+                    alt="Монтаж порного двухбалочного крана"
+                />
+                <GalleryItem
+                    srcset="/files/proekt/volgograd-prom-1/07-600w.avif"
+                    src="/files/proekt/volgograd-prom-1/07.avif"
+                    alt="Монтаж порного двухбалочного крана"
+                />
+                <div class="link-back">
+                    <NuxtLink to="/produce/dubble-girder">Производство опорных двухбалочных кранов</NuxtLink>
+                </div>
                 <div class="link-back">
                     <NuxtLink to="/proekts">&larr; Вернуться в проекты</NuxtLink>
                 </div>

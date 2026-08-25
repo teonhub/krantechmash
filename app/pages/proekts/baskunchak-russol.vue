@@ -5,13 +5,13 @@
 
     useHead({
         link: [{ rel: 'canonical', href: `${baseUrl}${route.path}` }],
-        title: 'Проект: «Руссоль» - кран опорный однобалочный',
+        title: 'Проект : Руссоль - кран опорный однобалочный',
         meta:
             [
-                { name: 'description', content: 'Реализованные проекты ПК Крантехмаш' },
-                { name: 'keywords', content: 'проекты крантехмаш' },
-                { property: 'og:title', content: 'Проекты | ПК Крантехмаш' },
-                { property: 'og:description', content: '' },
+                { name: 'description', content: 'Реализованный проект крана опорного однобалочного грузоподъёмностью до 15 тонн, для предприятия «Руссоль» в поселке Нижний Баскунчак' },
+                { name: 'keywords', content: 'проекты крантехмаш, кран опорный однобалочный, кран опорный' },
+                { property: 'og:title', content: 'Реализованный проект для Руссоль' },
+                { property: 'og:description', content: 'Реализованный проект крана опорного однобалочного грузоподъёмностью до 15 тонн, для предприятия «Руссоль» в поселке Нижний Баскунчак' },
                 { property: 'og:image', content: '/image/short/shorts-001.jpg' },
                 { property: 'og:url', content: 'https://ktmcranes.ru'+`${route.path}` },
                 { property: 'og:type', content: 'website' },
@@ -26,45 +26,48 @@
     <main>
         <div class="proekt-wrap">
             <div class="proekt-inner">
-                <div class="proekt-local">
-                    <div class="local-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" fill="#ffffff" viewBox="-5.0 -10.0 110.0 115.0">
-                            <path d="m65.25 43.281c-1.0195 21.02-30.613 19.336-30.375 0-0.21484-19.445 29.387-20.914 30.375 0zm21.281 0c1.1562 31.062-36.031 50.469-36.531 49.969-1.125 0-37.406-18.562-36.531-49.969 0-13.051 6.9609-25.109 18.266-31.637 11.305-6.5273 25.227-6.5273 36.531 0 11.305 6.5273 18.266 18.586 18.266 31.637zm-15.031 0c-1.6562-29.625-42.852-27.367-42.875 0-0.14062 5.7227 2.0625 11.254 6.0977 15.312s9.5547 6.293 15.277 6.1875c5.6992-0.011719 11.16-2.2773 15.191-6.3086s6.2969-9.4922 6.3086-15.191z"/>
-                        </svg>
-                    </div>
-                    <div>г.н.Баскунчак</div>
-                </div>
-                <h1>«Руссоль»</h1>
+                <h1>Руссоль</h1>
                 <div class="proekt-tech">
-                    Кран опорный однобалочный<br>Грузоподъёмность 15 тонн<br>Срок изготовления: 25 рабочих дней
+                    <ul>
+                        <li><span>Тип изделия</span>кран опорный однобалочный</li>
+                        <li><span>Грузоподъёмность</span>до 15 тонн</li>
+                        <li><span>Срок изготовления</span>25 рабочих дней</li>
+                        <li><span>Локация заказчика</span>п. Нижний Баскунчак</li>
+                    </ul>
+                </div>
+                <div class="proekt-content">
+                    <p>Для предприятия «Руссоль» был изготовлен опорный однобалочный мостовой кран грузоподъёмностью 15 тонн. Проектирование оборудования выполнялось с учётом поставленных производственных задач и требований к дальнейшей эксплуатации крана. Срок изготовления оборудования составил 25 рабочих дней. После производства, оборудование было доставлено на объект заказчика, где проведены монтажные работы, настройка систем и тестовые запуски. После успешной проверки работоспособности мостовой кран был передан заказчику с оформлением приёмочной документации.</p>
                 </div>
             </div>
             <div class="proekt-gallery">
                 <GalleryItem
-                    srcset="/files/proekt/baskunchak-russol/02.avif"
+                    srcset="/files/proekt/baskunchak-russol/02-600w.avif"
                     src="/files/proekt/baskunchak-russol/02.avif"
-                    alt=""
+                    alt="Концевая балка к опорному однобалочному крану"
                 />
                 <GalleryItem
-                    srcset="/files/proekt/baskunchak-russol/03.avif"
+                    srcset="/files/proekt/baskunchak-russol/03-600w.avif"
                     src="/files/proekt/baskunchak-russol/03.avif"
-                    alt=""
+                    alt="Концевая балка к опорному однобалочному крану"
                 />
                 <GalleryItem
-                    srcset="/files/proekt/baskunchak-russol/04.avif"
+                    srcset="/files/proekt/baskunchak-russol/04-600w.avif"
                     src="/files/proekt/baskunchak-russol/04.avif"
-                    alt=""
+                    alt="Концевая балка к опорному однобалочному крану"
                 />
                 <GalleryItem
-                    srcset="/files/proekt/baskunchak-russol/05.avif"
+                    srcset="/files/proekt/baskunchak-russol/05-600w.avif"
                     src="/files/proekt/baskunchak-russol/05.avif"
-                    alt=""
+                    alt="Кран опорный однобалочный"
                 />
                 <GalleryItem
-                    srcset="/files/proekt/baskunchak-russol/06.avif"
+                    srcset="/files/proekt/baskunchak-russol/06-600w.avif"
                     src="/files/proekt/baskunchak-russol/06.avif"
-                    alt=""
+                    alt="Монтаж опорного однобалочного крана"
                 />
+                <div class="link-back">
+                    <NuxtLink to="/produce/single-girder">Производство опорных однобалочных кранов</NuxtLink>
+                </div>
                 <div class="link-back">
                     <NuxtLink to="/proekts">&larr; Вернуться в проекты</NuxtLink>
                 </div>

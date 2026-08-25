@@ -5,13 +5,13 @@
 
     useHead({
         link: [{ rel: 'canonical', href: `${baseUrl}${route.path}` }],
-        title: 'Проект: завод им.Медведева - кран опорный однобалочный',
+        title: 'Проект : завод им.Медведева - кран опорный однобалочный',
         meta:
             [
-                { name: 'description', content: 'Реализованные проекты ПК Крантехмаш' },
-                { name: 'keywords', content: 'проекты крантехмаш' },
-                { property: 'og:title', content: 'Проекты | ПК Крантехмаш' },
-                { property: 'og:description', content: '' },
+                { name: 'description', content: 'Реализованный проект опорного однобалочного крана грузоподъёмностью до 5 тонн, для предприятия «Завод им. Медведева» в городе Орле' },
+                { name: 'keywords', content: 'проекты крантехмаш, кран опорный однобалочный, кран однобалочный' },
+                { property: 'og:title', content: 'Реализованный проект для завода им.Медведева' },
+                { property: 'og:description', content: 'Реализованный проект опорного однобалочного крана грузоподъёмностью до 5 тонн, для предприятия «Завод им. Медведева» в городе Орле' },
                 { property: 'og:image', content: '/image/short/shorts-001.jpg' },
                 { property: 'og:url', content: 'https://ktmcranes.ru'+`${route.path}` },
                 { property: 'og:type', content: 'website' },
@@ -21,45 +21,47 @@
         })
 
 </script>
-
 <template>
     <main>
         <div class="proekt-wrap">
             <div class="proekt-inner">
-                <div class="proekt-local">
-                    <div class="local-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" fill="#ffffff" viewBox="-5.0 -10.0 110.0 115.0">
-                            <path d="m65.25 43.281c-1.0195 21.02-30.613 19.336-30.375 0-0.21484-19.445 29.387-20.914 30.375 0zm21.281 0c1.1562 31.062-36.031 50.469-36.531 49.969-1.125 0-37.406-18.562-36.531-49.969 0-13.051 6.9609-25.109 18.266-31.637 11.305-6.5273 25.227-6.5273 36.531 0 11.305 6.5273 18.266 18.586 18.266 31.637zm-15.031 0c-1.6562-29.625-42.852-27.367-42.875 0-0.14062 5.7227 2.0625 11.254 6.0977 15.312s9.5547 6.293 15.277 6.1875c5.6992-0.011719 11.16-2.2773 15.191-6.3086s6.2969-9.4922 6.3086-15.191z"/>
-                        </svg>
-                    </div>
-                    <div>г.Орёл</div>
-                </div>
                 <h1>Завод им.Медведева</h1>
                 <div class="proekt-tech">
-                    Кран опорный однобалочный<br>Грузоподъёмность: 5 тонн<br>Срок изготовления: 30 рабочих дней
+                    <ul>
+                        <li><span>Тип изделия</span>кран опорный однобалочный</li>
+                        <li><span>Грузоподъёмность</span>до 5 тонн</li>
+                        <li><span>Срок изготовления</span>30 рабочих дней</li>
+                        <li><span>Локация заказчика</span>город Орёл</li>
+                    </ul>
+                </div>
+                <div class="proekt-content">
+                    <p>Для предприятия «Завод им. Медведева» в городе Орле был спроектирован и изготовлен опорный однобалочный мостовой кран грузоподъёмностью до 5 тонн. Конструкция рассчитана под конкретные производственные задачи заказчика с учётом параметров цеха и режима эксплуатации. Изделие было доставлено на предприятие и проведены монтажные работы. Осущественны тестовые запуски, подписан акт приёмки, передан полный пакет эксплуатационной документации.</p>
                 </div>
             </div>
             <div class="proekt-gallery">
                 <GalleryItem
-                    srcset="/files/proekt/orel-medvd/02.avif"
+                    srcset="/files/proekt/orel-medvd/02-600w.avif"
                     src="/files/proekt/orel-medvd/02.avif"
-                    alt=""
+                    alt="Монтаж опорного однобалочного крана в цеху"
                 />
                 <GalleryItem
-                    srcset="/files/proekt/orel-medvd/03.avif"
+                    srcset="/files/proekt/orel-medvd/03-600w.avif"
                     src="/files/proekt/orel-medvd/03.avif"
-                    alt=""
+                    alt="Монтаж опорного однобалочного крана в цеху"
                 />
                 <GalleryItem
-                    srcset="/files/proekt/orel-medvd/05.avif"
+                    srcset="/files/proekt/orel-medvd/05-600w.avif"
                     src="/files/proekt/orel-medvd/05.avif"
-                    alt=""
+                    alt="Монтаж опорного однобалочного крана в цеху"
                 />
                 <GalleryItem
-                    srcset="/files/proekt/orel-medvd/06.avif"
+                    srcset="/files/proekt/orel-medvd/06-600w.avif"
                     src="/files/proekt/orel-medvd/06.avif"
-                    alt=""
+                    alt="Монтаж опорного однобалочного крана в цеху"
                 />
+                <div class="link-back">
+                    <NuxtLink to="/produce/single-girder">Производство опорных однобалочных кранов</NuxtLink>
+                </div>
                 <div class="link-back">
                     <NuxtLink to="/proekts">&larr; Вернуться в проекты</NuxtLink>
                 </div>

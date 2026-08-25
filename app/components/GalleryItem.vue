@@ -10,7 +10,7 @@
 
 <template>
     <picture>
-        <source :srcset="srcset" media="(min-width: 600px)" />
-        <img :src="src" :alt="alt" />
+        <source :srcset="srcset" media="(max-width: 600px)" type="image/avif" />
+        <img :src="src" :alt="alt" loading="lazy" />
     </picture>  
 </template>

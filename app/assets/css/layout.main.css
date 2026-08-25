@@ -788,8 +788,10 @@ main .proekt-wrap .proekt-footer a:hover{
     transition: all 0.3s ease-in-out 0s;
 }
 
-main .proekt-wrap .proekt-inner{
-    margin: 80px 0 60px 0;
+/* --- Page Proekt --- */
+
+main .proekt-wrap .proekt-inner {
+    margin: 100px 0;
     box-sizing: border-box;
     padding: 0 25px;
     color: #fff;
@@ -797,12 +799,8 @@ main .proekt-wrap .proekt-inner{
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     letter-spacing: -.3px;
-    line-height: 24px;
+    line-height: 26px;
     text-align: center;
-}
-
-main .proekt-wrap .proekt-local{
-    margin-bottom: 20px;
 }
 
 main .proekt-wrap .proekt-local .local-icon{
@@ -811,22 +809,52 @@ main .proekt-wrap .proekt-local .local-icon{
     margin: 0 auto;
 }
 
-main .proekt-wrap .proekt-tech{
-    margin-top: 20px;
+main .proekt-wrap .proekt-tech {
+    margin: 70px 0;
 }
 
-main .proekt-wrap .proekt-gallery{
+main .proekt-wrap .proekt-tech ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .proekt-wrap .proekt-tech ul li {
+    display: block;
+    width: 300px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 0 30px;
+    border-right: 1px solid #373737;
+}
+
+main .proekt-wrap .proekt-tech ul li:last-child {
+    border: 0;
+}
+
+main .proekt-wrap .proekt-tech ul li span {
+    display: block;
+    color: #9d9d9d;
+}
+
+main .proekt-wrap .proekt-content {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main .proekt-wrap .proekt-gallery {
     text-align: center;
     margin-bottom: 100px;
 }
 
-main .proekt-wrap .proekt-gallery picture{
+main .proekt-wrap .proekt-gallery picture {
     display: block;
     margin-bottom: 40px;
 }
 
-main .proekt-wrap .proekt-gallery picture img{
-    border-radius: 6px;
+main .proekt-wrap .proekt-gallery picture img {
+    border-radius: 4px;
 }
 
 main .link-back{
@@ -852,6 +880,41 @@ main .link-back a:hover{
     border-bottom: 1px solid #fff;
     transition: all 0.3s ease-in-out 0s;
 }
+
+@media (max-width: 575.98px) {
+    main .proekt-wrap .proekt-tech{
+        margin: 40px 0 20px 0;
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+    main .proekt-wrap .proekt-tech ul {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    main .proekt-wrap .proekt-tech ul li {
+        border: 0;
+        padding: 0 0 25px 0;
+        text-align: left;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    main .proekt-wrap .proekt-content {
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+    main .proekt-wrap .proekt-content p {
+        text-align: justify;
+        hyphens: auto;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    main .link-back a {
+        font-size: 14px;
+    }
+}
+
 
 main .shorts-wrap{
     /* margin-top: 1px; */
@@ -1119,7 +1182,7 @@ footer .footer-wrap .layout-logotype .copyright{
 }
 
 footer .footer-wrap .footer-items{
-    padding: 25px;
+    padding: 0 25px 25px 25px;
     margin-bottom: 80px;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
@@ -1171,4 +1234,14 @@ footer .krantechmash img{
 .page-enter-from,
 .page-leave-to {
     opacity: 0;
+}
+
+/* Logo */
+
+.layout-logotype.black svg{
+    fill: #000;
+}
+
+.layout-logotype.white svg{
+    fill: #fff;
 }
