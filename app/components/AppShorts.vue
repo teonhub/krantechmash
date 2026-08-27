@@ -12,27 +12,35 @@
             </div>
         </div>
     </div>
-
     <div class="shorts-items">
         <div class="grid-4">
             <AppShortsItem
-                short="/files/shorts/shorts-001.mp4"
-                cover="/files/image/short/shorts-001.jpg"
-                sizef="44.80"
+                shortfile="/files/shorts/shorts-001.mp4"
+                imgavif="/files/image/short/shorts-001.avif"
+                imgjpeg="/files/image/short/shorts-001.jpg"
+                sizefile="44.80"
+                altcontent="Монтажа опорного однобалочного крана"
             />
             <AppShortsItem
-                short="/files/shorts/shorts-db-01.mp4"
-                cover="/files/image/short/shorts-db-01.jpg"
-                sizef="11.50"
+                shortfile="/files/shorts/shorts-db-01.mp4"
+                imgavif="/files/image/short/shorts-db-01.avif"
+                imgjpeg="/files/image/short/shorts-db-01.jpg"
+                sizefile="11.50"
+                altcontent="Монтаж опорного двухбалочного крана"
             />
             <AppShortsItem
-                short="/files/shorts/shorts-ob.mp4"
-                cover="/files/image/short/shorts-ob.jpg"
-                sizef="21.40" />
+                shortfile="/files/shorts/shorts-ob.mp4"
+                imgavif="/files/image/short/shorts-ob.avif"
+                imgjpeg="/files/image/short/shorts-ob.jpg"
+                sizefile="21.40"
+                altcontent="Монтаж опорного двухбалочного крана"
+            />
             <AppShortsItem
-                short="/files/shorts/shorts-db-02.mp4"
-                cover="/files/image/short/shorts-db-02.jpg"
-                sizef="16.70"
+                shortfile="/files/shorts/shorts-db-02.mp4"
+                imgavif="/files/image/short/shorts-db-02.avif"
+                imgjpeg="/files/image/short/shorts-db-02.jpg"
+                sizefile="16.70"
+                altcontent="Монтажа опорного однобалочного крана"
             />
         </div>
     </div>

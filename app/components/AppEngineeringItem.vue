@@ -1,20 +1,21 @@
 <script setup lang="ts">
 
     defineProps<{
-        url: string,
-        image: string,
-        name: string,
+        url:   string,
+        avif:  string,
+        jpeg:  string,
+        name:  string,
         price: string
     }>();
     
 </script>
-
 <template>
     <div class="engin-wrap">
         <NuxtLink :to="url">
             <picture>
-                <source :srcset="image" media="(min-width: 600px)" />
-                <img :src="image" :alt="name" />
+                <source :srcset="avif" type="image/avif" />
+                <source :srcset="jpeg" type="image/jpeg" />
+                <img :src="avif" :alt="name" loading="lazy" />
             </picture>
             <div class="engin-name">{{ name }}</div>
             <div class="engin-price">До: {{ price }}</div>

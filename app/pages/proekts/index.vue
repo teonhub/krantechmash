@@ -62,12 +62,12 @@
                 />
                 <AppProektItem 
                     url="/proekts/volgograd-prom-2"
-                    image="/files/proekt/volgograd-prom-3/01.avif"
+                    image="/files/proekt/volgograd-prom-2/01.avif"
                     name="г.Волгоград, Пром.предприятие"
                 />
                 <AppProektItem 
                     url="/proekts/volgograd-prom-3"
-                    image="/files/proekt/volgograd-prom-2/01.avif"
+                    image="/files/proekt/volgograd-prom-3/01.avif"
                     name="г.Волгоград, Пром.предприятие"
                 />
             </div>

@@ -20,7 +20,15 @@
         
             <div class="inner-center">
                 <div class="video-wrapper">
-                    <video autoplay muted loop playsinline src="assets/media/logotype.mp4"></video>
+                    <video
+                        autoplay muted loop playsinline
+                        preload="auto"
+                        disablepictureinpicture
+                        controlslist="nodownload noplaybackrate nofullscreen noremoteplayback"
+                        poster="/assets/media/salutation.avif">
+                        <source src="/assets/media/salutation.av1.mp4"  type="video/mp4; codecs=av1" />
+                        <source src="/assets/media/salutation.h264.mp4" type="video/mp4" />
+                    </video>
                         <h1>Крантехмаш</h1>
                             <div class="icon-lines">
                                 <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 90 112.5" x="0px" y="0px">
@@ -29,7 +37,6 @@
                             </div>
                         </div>
                     </div>
-
             <div class="inner-right">
                 <div class="layout-phone">
                     Телефон <a href="tel:+79313787378">+7 931 378 73 78</a>

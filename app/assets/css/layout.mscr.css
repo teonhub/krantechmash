@@ -304,12 +304,12 @@
         width: 40px;
         height: 40px;
         left: 5px;
-        bottom: 10px;
+        bottom: 5px;
     }
     main .shorts-items .short .short-inner a .media-size {
         font-size: 12px;
         left: 50px;
-        bottom: 5px;
+        bottom: 0;
     }
     main .proekt .proek-name{
         font-weight: 400;
@@ -319,7 +319,6 @@
         background: #000;
     }
     main .layout-heading h1 {
-        font-size: 58px;
         line-height: 56px;
         color: #fff;
     }
@@ -405,6 +404,7 @@
     }
     main .proekt-wrap .proekt-inner {
         margin: 110px 0 60px 0;
+        padding: 0 40px;
     }
     main .proekt-wrap .proekt-local {
         font-size: 13px;
@@ -415,16 +415,17 @@
     main .proekt-wrap h1 {
         font-size: 58px;
         line-height: 56px;
+        text-align: left;
     }
     main .proekt-wrap .proekt-gallery {
         box-sizing: border-box;
         padding: 0 15px;
     }
     main .proekt-wrap .proekt-gallery picture {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     main .proekt-wrap .proekt-gallery picture img {
-        border-radius: 4px;
+        border-radius: 0;
     }
     main .proekt picture::after{
         background: -webkit-linear-gradient(0deg, rgb(0, 0, 0, 0.8), rgb(255, 255, 255, 0));

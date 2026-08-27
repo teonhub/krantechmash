@@ -8,12 +8,12 @@
 
     useHead({
         link: [{ rel: 'canonical', href: `${baseUrl}${route.path}` }],
-        title: 'Вакансии в ПК Крантехмаш: работа на производстве',
+        title: 'ПК Крантехмаш: вакансии на производстве',
         meta:
             [
                 { name: 'description', content: 'Открыты вакансии в ПК Крантехмаш. Мы предлагаем стабильную работу, конкурентную зарплату и возможности для профессионального роста. Узнайте о текущих вакансиях и условиях трудоустройства на нашем сайте' },
-                { name: 'keywords', content: '' },
-                { property: 'og:title', content: 'Вакансии в ПК Крантехмаш' },
+                { name: 'keywords', content: 'вакансии, вакансии крантехмаш' },
+                { property: 'og:title', content: 'Вакансии на производстве' },
                 { property: 'og:description', content: 'Открыты вакансии в ПК Крантехмаш. Мы предлагаем стабильную работу, конкурентную зарплату и возможности для профессионального роста. Узнайте о текущих вакансиях и условиях трудоустройства на нашем сайте' },
                 { property: 'og:image', content: '/image/short/shorts-001.jpg' },
                 { property: 'og:url', content: 'https://ktmcranes.ru'+`${route.path}` },
@@ -24,7 +24,6 @@
         })
 
 </script>
-
 <template>
     <main>
         <AppLayoutHeading title="Вакансии" />

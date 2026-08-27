@@ -1,22 +1,27 @@
 <script setup lang="ts">
 
     defineProps<{
-        short: string,
-        cover: string,
-        sizef: string
+        shortfile:  string,
+        imgavif:    string,
+        imgjpeg:    string,
+        sizefile:   string,
+        altcontent: string
     }>();
 
 </script>
-
 <template>
     <div class="short">
         <div class="short-inner">
             <ClientOnly>
                 <Fancybox :options="{Carousel: {infinite: false,}}">
-                    <a class="btm-play" :href="short" data-fancybox="gallery" aria-label="Открыть видео">
+                    <a class="btm-play" :href="shortfile" data-fancybox="gallery" aria-label="Открыть видео">
                         <picture>
-                            <source :srcset="cover" media="(min-width: 600px)" />
-                            <img :src="cover" alt="" />
+                            <source :srcset="imgavif" type="image/avif" />
+                            <source :srcset="imgjpeg" type="image/jpeg" />
+                            <img
+                                :src="imgavif"
+                                :alt="altcontent" loading="lazy"
+                            />
                         </picture>
                         <div class="icon-play">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0" aria-hidden="true" focusable="false">
@@ -24,7 +29,7 @@
                                 </svg>
                             </div>
                         <div class="media-size">
-                            <span>{{ sizef }} mb</span>
+                            <span>{{ sizefile }} mb</span>
                         </div> 
                     </a>
                 </Fancybox>

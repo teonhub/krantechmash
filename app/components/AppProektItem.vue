@@ -7,13 +7,12 @@
     }>();
  
 </script>
-
 <template>
     <div class="proekt">
         <NuxtLink :to="url" class="picture-layout">
             <picture>
                 <source :srcset="image" media="(min-width: 600px)" />
-                <img :src="image" alt="{{ name }}" />
+                <img :src="image" alt="{{ name }}" loading="lazy" />
             </picture>
             <div class="icon-name">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" fill="#ffffff" viewBox="-5.0 -10.0 110.0 135.0">

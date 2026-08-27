@@ -21,7 +21,6 @@
         })
 
 </script>
-
 <template>
     <main>
         <div class="proekt-wrap">

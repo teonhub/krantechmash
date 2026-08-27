@@ -1,11 +1,10 @@
 <script setup lang="ts">
 
-    import AppEngineeringItem from './AppEngineeringItem.vue'
-
     interface EngineeringItem {
-        url: string
-        image: string
-        name: string
+        url:   string,
+        avif:  string,
+        jpeg:  string,
+        name:  string,
         price: string
     }
 
@@ -20,81 +19,92 @@
     const items: EngineeringItem[] = [
         {
             url: '/produce/konsole-electric',
-            image: '/image/engineering/konsole-electric.jpg',
+            jpeg: '/image/engineering/konsole-electric.jpg',
+            avif: '/image/engineering/konsole-electric.avif',
             name: 'Консольный электрический',
             price: '10 т'
         },
         {
             url: '/produce/konsole-mech',
-            image: '/image/engineering/konsole-mech.jpg',
+            jpeg: '/image/engineering/konsole-mech.jpg',
+            avif: '/image/engineering/konsole-mech.avif',
             name: 'Консольный ручной',
             price: '10 т'
         },
         {
             url: '/produce/konsole-wall',
-            image: '/image/engineering/konsole-wall.jpg',
+            jpeg: '/image/engineering/konsole-wall.jpg',
+            avif: '/image/engineering/konsole-wall.avif',
             name: 'Консольный настенный',
             price: '320 кг'
         },
         {
             url: '/produce/single-girder',
-            image: '/image/engineering/single-girder.jpg',
+            jpeg: '/image/engineering/single-girder.jpg',
+            avif: '/image/engineering/single-girder.avif',
             name: 'Опорный однобалочный',
             price: '20 т'
         },
         {
             url: '/produce/dubble-girder',
-            image: '/image/engineering/dubble-girder.jpg',
+            jpeg: '/image/engineering/dubble-girder.jpg',
+            avif: '/image/engineering/dubble-girder.avif',
             name: 'Опорный двухбалочный',
             price: '50 т'
         },
         {
             url: '/produce/suspended-single-span',
-            image: '/image/engineering/suspended-dubble-span.jpg',
+            jpeg: '/image/engineering/suspended-dubble-span.jpg',
+            avif: '/image/engineering/suspended-dubble-span.avif',
             name: 'Подвесной однопролетный',
             price: '16 т'
         },
         {
             url: '/produce/suspended-dubble-span',
-            image: '/image/engineering/suspended-single-span.jpg',
+            jpeg: '/image/engineering/suspended-single-span.jpg',
+            avif: '/image/engineering/suspended-single-span.avif',
             name: 'Подвесной двухпролетный',
             price: '16 т'
         },
         {
             url: '/produce/gantry',
-            image: '/image/engineering/gantry.jpg',
+            jpeg: '/image/engineering/gantry.jpg',
+            avif: '/image/engineering/gantry.avif',
             name: 'Козловой кран',
             price: '20 т'
         },
         {
             url: '/produce/mobile-transshipment',
-            image: '/image/engineering/mobile-transshipment.jpg',
+            jpeg: '/image/engineering/mobile-transshipment.jpg',
+            avif: '/image/engineering/mobile-transshipment.avif',
             name: 'Перегрузочное моб. устройство',
             price: '5 т'
         },
         {
             url: '/produce/trolleys-support',
-            image: '/image/engineering/trolleys-support.jpg',
+            jpeg: '/image/engineering/trolleys-support.jpg',
+            avif: '/image/engineering/trolleys-support.avif',
             name: 'Концевые балки к опорному крану',
             price: '50 т'
         },
         {
             url: '/produce/trolleys-suspension',
-            image: '/image/engineering/trolleys-suspension.jpg',
+            jpeg: '/image/engineering/trolleys-suspension.jpg',
+            avif: '/image/engineering/trolleys-suspension.avif',
             name: 'Концевые балки к подвесному крану',
             price: '10 т'
         }
     ]
 
 </script>
-
 <template>
     <AppEngineeringItem
         v-for="(item, index) in (props.limit ? items.slice(0, props.limit) : items)"
-        :key="index"
-        :url="item.url"
-        :image="item.image"
-        :name="item.name"
-        :price="item.price"
-    />
+            :key="index"
+            :url="item.url"
+            :jpeg="item.jpeg"
+            :avif="item.avif"
+            :name="item.name"
+            :price="item.price"
+        />
 </template>
